@@ -4162,3 +4162,50 @@ input, select, textarea {
 #up:hover {
   background-color: rgb(11, 61, 101);
 }
+
+
+:root {
+  --finish: #00b894;
+  --high: #a2b800;
+  --medium: #e1ae56;
+  --low: #d14623;
+  --none: #dd3636;
+}
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+
+.progressbar {
+  background-color: var(--progress);
+  color: white;
+  padding: 0.5em;
+  text-align: right;
+  font-size: 10px;
+  border-radius: 15px;
+}
+
+.progressbar[title="none"] {
+   background-color: var(--none);
+}
+
+.progressbar[title="low"] {
+   background-color: var(--low);
+}
+
+.progressbar[title="medium"] {
+   background-color: var(--medium);
+}
+
+.progressbar[title="high"] {
+   background-color: var(--high);
+}
+
+.progressbar[title="finish"] {
+   background-color: var(--finish);
+}
