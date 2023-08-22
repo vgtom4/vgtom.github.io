@@ -2486,15 +2486,7 @@ input, select, textarea {
 				font-size: 2.25em;
 			}
 
-    .competence {
-			cursor: default;
-			display: inline-block;
-			height: 5em;
-			line-height: 5.65em;
-			margin: 0 0 0 0;
-			text-align: center;
-      width: 5em;
-		}
+    
 
 			.icon.major.alt {
 				text-decoration: none;
@@ -4209,3 +4201,46 @@ input, select, textarea {
 .progressbar[title="finish"] {
    background-color: var(--finish);
 }
+
+
+.competence-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  .competence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: calc(33.33% - 20px); /*Maximum of 3 competence per line with 20px gap*/
+  }
+
+  :root {
+	--size-square: 120px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--size-square); /* Adjust container width */
+    height: var(--size-square); /* Adjust container height */
+    border-radius: 100%; /* Circular frame */
+    background-color: #272833; /* Gray background color */
+	overflow: hidden; /* Prevent content from overflowing */
+  }
+
+  .image-container img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+  }
+
+  .competence-name {
+    margin-top: 10px;
+    text-align: center;
+	font-size: 1.2em;
+	font-weight: 400;
+  }
