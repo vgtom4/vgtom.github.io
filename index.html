@@ -217,7 +217,7 @@
             <ul class="splide__list">
       
               <li class="splide__slide">
-                <div class="project" onclick="window.alert('affichage de plus d\'information sur le projet.')">
+                <div class="project" projet-modal="p1">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -231,7 +231,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project">
+                <div class="project" projet-modal="p2">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -288,21 +288,61 @@
             </ul>
           </div>
         </section>
-      </div>
-      <script>
-        new Splide( '.splide', {
+        <script>
+          new Splide( '.splide', {
                       type       : 'loop',
                       height     :  '400px',
                       drag: 'free',
                       perPage    : 3,
                       perMove    : 1,
-                      wheel: true,
                       autoScroll: {
                         speed: 0.3,
                       },
                       updateOnMove: true,
                       
                     } ).mount(window.splide.Extensions);
+        </script>
+      </div>
+
+      <div class="modal">
+        <dialog id="p1">
+          <button close-modal class="close">X</button>
+          <div>Salut</div>
+        </dialog>
+
+        <dialog id="p2">
+          <button close-modal class="close">X</button>
+          <div>Salut2</div>
+        </dialog>
+      </div>
+
+      <script>
+        const closeButtons = document.querySelectorAll("[close-modal]");
+        const modals = document.querySelectorAll("dialog");
+
+        closeButtons.forEach(closeButton => {
+            closeButton.addEventListener("click", () => {
+                modals.forEach(modal => {
+                    modal.close();
+                });
+            });
+        });
+
+        // Écouteur d'événement pour ouvrir le modal lorsque le div de projet est cliqué
+        const projectDivs = document.querySelectorAll(".project");
+
+        projectDivs.forEach(projectDiv => {
+            projectDiv.addEventListener("click", () => {
+                const dialogId = projectDiv.getAttribute("projet-modal");
+                const dialog = document.getElementById(dialogId);
+                if (dialog) {
+                    modals.forEach(modal => {
+                        modal.close();
+                    });
+                    dialog.showModal();
+                }
+            });
+        });
       </script>
     </section>
 
