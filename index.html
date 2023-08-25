@@ -13,6 +13,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/splide.min.css" />
+  <script src="assets/js/splide.min.js"></script>
+  <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
@@ -25,9 +28,11 @@
     <header id="header">
       <nav id="nav">
         <ul>
+          <li><a href="test.html">Test</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="#aProposDeMoi" class="scrolly">À propos de moi</a></li>
           <li><a href="#competences" class="scrolly">Compétences</a></li>
+          <li><a href="#atelier_professionnel" class="scrolly">AP</a></li>
      			<li>
             <a href="#stages" class="scrolly">Stages</a>
               <ul>
@@ -75,7 +80,6 @@
 
     <!-- aProposDeMoi -->
     <section id="aProposDeMoi" class="spotlight style1 bottom">
-      <span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
       <div class="content">
         <div class="container">
           <div class="row">
@@ -200,6 +204,108 @@
       <a href="#two" class="goto-next scrolly">Next</a>
     </section>
 
+    <section id="atelier_professionnel" class="wrapper style1 special fade-up">
+      <div class="container">
+
+        <header class="major">
+          <h2>Atelier professionnel</h2>
+        </header>
+
+        <h3>Projets réalisés</h3>
+        <section class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+      
+              <li class="splide__slide">
+                <div class="project" onclick="window.alert('affichage de plus d\'information sur le projet.')">
+                  <div class="image-container">
+                    <img src="images/AP/APtest.png">
+                  </div>
+                  <div class="project-name">Projet 1</div>
+                  <div class="project-description">Description du projet 1.</div>
+                  <div class="badge-container">
+                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  </div>
+                </div>
+              </li>
+      
+              <li class="splide__slide">
+                <div class="project">
+                  <div class="image-container">
+                    <img src="images/AP/APtest.png">
+                  </div>
+                  <div class="project-name">Projet 2</div>
+                  <div class="project-description">Description du projet 2.</div>
+                  <div class="badge-container">
+                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  </div>
+                </div>
+              </li>
+      
+              <li class="splide__slide">
+                <div class="project">
+                  <div class="image-container">
+                    <img src="images/AP/APtest.png">
+                  </div>
+                  <div class="project-name">Projet 3</div>
+                  <div class="project-description">Description du projet 3.</div>
+                  <div class="badge-container">
+                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  </div>
+                </div>
+              </li>
+      
+              <li class="splide__slide">
+                <div class="project">
+                  <div class="image-container">
+                    <img src="images/AP/APtest.png">
+                  </div>
+                  <div class="project-name">Projet 4</div>
+                  <div class="project-description">Description du projet 4.</div>
+                  <div class="badge-container">
+                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  </div>
+                </div>
+              </li>
+      
+              <li class="splide__slide">
+                <div class="project">
+                  <div class="image-container">
+                    <img src="images/AP/APtest.png">
+                  </div>
+                  <div class="project-name">Projet 5</div>
+                  <div class="project-description">Description du projet 5.</div>
+                  <div class="badge-container">
+                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <script>
+        new Splide( '.splide', {
+                      type       : 'loop',
+                      height     :  '400px',
+                      drag: 'free',
+                      perPage    : 3,
+                      perMove    : 1,
+                      wheel: true,
+                      autoScroll: {
+                        speed: 0.3,
+                      },
+                      updateOnMove: true,
+                      
+                    } ).mount(window.splide.Extensions);
+      </script>
+    </section>
+
     <!-- Two -->
     <section id="two" class="spotlight style2 right">
       <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
@@ -235,8 +341,6 @@
       </div>
       <a href="#five" class="goto-next scrolly">Next</a>
     </section>
-
-
 
     <!-- Five -->
     <section id="cv" class="wrapper style2 special fade">

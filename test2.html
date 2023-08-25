@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Portfolio Tom Vieillard--Grelet</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="assets/css/test2.css" />
+</head>
+
+<body>
+  <!-- <div class="carousel-container">
+    <div class="carousel">
+      <div class="project">
+        <img src="images/AP/APtest.png" alt="Projet 1">
+        <h3>Titre du Projet 1</h3>
+        <p>Description courte du Projet 1</p>
+        <div class="badges">
+          <span class="badge"><img src="images/langages/c_sharp.png"></span>
+          <span class="badge">Langage 2</span>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/AP/APtest.png" alt="Projet 2">
+        <h3>Titre du Projet 2</h3>
+        <p>Description courte du Projet 2</p>
+        <div class="badges">
+          <span class="badge">Langage 1</span>
+          <span class="badge">Langage 2</span>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="center">
+    <div class="wrapper">
+      <div class="inner">
+        
+        <div class="card">
+          <img src="images/AP/APtest.png">
+          <div class="content">
+            <h1>Product Design</h1>
+            <h3>UI/UX, Design</h3>
+            <div class="badges">
+              <img class="badge" src="images/langages/c_sharp.png" alt="Langage 3">
+              <img class="badge" src="images/langages/mySQL.png" alt="Langage 4">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/AP/APtest.png">
+          <div class="content">
+            <h1>Custom Website</h1>
+            <h3>UI/UX, Design</h3>
+            <div class="badges">
+              <img class="badge" src="images/langages/c_sharp.png" alt="Langage 3">
+              <img class="badge" src="images/langages/mySQL.png" alt="Langage 4">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/AP/APtest.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+            <div class="badges">
+              <img class="badge" src="images/langages/c_sharp.png" alt="Langage 3">
+              <img class="badge" src="images/langages/mySQL.png" alt="Langage 4">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+            <div class="badges">
+              <img class="badge" src="images/langages/c_sharp.png" alt="Langage 3">
+              <img class="badge" src="images/langages/mySQL.png" alt="Langage 4">
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+            <h3>UI/UX, Design</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/1.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/2.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+          </div>
+        </div>
+        <div class="card">
+          <img src="https://colorlib.com/preview/theme/seogo/img/case_study/3.png">
+          <div class="content">
+            <h1>Digital Marketing</h1>
+            <h3>UI/UX, Design</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="map">
+      <button class="active first"></button>
+      <button class="second"></button>
+      <button class="third"></button>
+    </div>
+  </div>
+
+  <script>
+
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
+
+buttonsWrapper.addEventListener("click", (e) => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach((item) =>
+      item.classList.remove("active")
+    );
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("third")) {
+      slides.style.transform = "translatex(-66.6666666667%)";
+      e.target.classList.add("active");
+    }
+  }
+});
+
+
+
+    // const carousel = document.querySelector('.carousel');
+    // let projectIndex = 0;
+
+    // function moveCarousel() {
+    //   const projectWidth = document.querySelector('.project').offsetWidth;
+    //   projectIndex = (projectIndex + 1) % (carousel.children.length - 1);
+    //   carousel.style.transform = `translateX(-${projectIndex * projectWidth}px)`;
+    // }
+
+    // setInterval(moveCarousel, 3000); // Change de projet toutes les 3 secondes
+  </script>
+</body>
+</html>
