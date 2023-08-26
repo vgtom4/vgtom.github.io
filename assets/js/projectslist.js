@@ -15,5 +15,21 @@ const projectTemplates = {
             <!-- ... d'autres informations ... -->
         </div>
     `,
+    project3: `
+        <div>
+            <img src="https://gyazo.com/f34b0ed1f228f5b8106acd7ff5637ce0.gif" alt="Projet 3" />
+            <h2>Projet 3</h2>
+            <p>Description du projet 3.</p>
+        </div>
+    `,
+    audio: `
+        <div>
+            <img src="https://gyazo.com/f34b0ed1f228f5b8106acd7ff5637ce0.gif" alt="hmmm" /><br/>
+            <audio controls>
+                <source src="assets/audio/hmmm.mp3" type="audio/mpeg">
+                Votre navigateur ne supporte pas la balise audio.
+            </audio>
+        </div>
+    `,
     // ... autres projets ...
 };

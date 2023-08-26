@@ -70,7 +70,7 @@
         <header>
           <p>Bonjour, je suis
             <br>
-          <h2><strong>Tom VIEILLARD--GRELET.</strong></h2>
+          <h2><strong>Tom VIEILLARD--GRELET<a needModal class="EasterEgg" data-project-id="audio">.</a></strong></h2>
           </p>
           <p>Bienvenue sur mon Portfolio.</p>
         </header>
@@ -218,7 +218,7 @@
             <ul class="splide__list">
       
               <li class="splide__slide">
-                <div class="project" data-project-id="project1">
+                <div needModal class="project" data-project-id="project1">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -232,7 +232,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project" data-project-id="project2">
+                <div needModal class="project" data-project-id="project2">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -246,7 +246,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project" data-project-id="project3">
+                <div needModal class="project" data-project-id="project3">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -260,7 +260,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project" data-project-id="project4">
+                <div needModal class="project" data-project-id="project4">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -274,7 +274,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project" data-project-id="project5">
+                <div needModal class="project" data-project-id="project5">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -316,19 +316,26 @@
       <script>
         const modal = document.querySelector("dialog");
 
+        var previousTemplate = null;
         // Écouteur d'événement pour ouvrir le modal lorsque le div de projet est cliqué
-        const projectDivs = document.querySelectorAll(".project");
+        const projectDivs = document.querySelectorAll("[needModal]");
 
         // Permet de récupérer le contenu du template du projet, de l'afficher dans le modal et d'ouvrir le modal
         projectDivs.forEach(projectDiv => {
             projectDiv.addEventListener("click", () => {
                 const projectId = projectDiv.getAttribute("data-project-id");
                 const projectTemplate = projectTemplates[projectId];
+                if (previousTemplate!=projectTemplate){
+                  previousTemplate = projectTemplates[projectId];
+                  if (projectTemplate) {
+                      const projectDetails = document.getElementById("project-details");
+                      projectDetails.innerHTML = projectTemplate;
+                  }
+                } 
                 if (projectTemplate) {
-                    const projectDetails = document.getElementById("project-details");
-                    projectDetails.innerHTML = projectTemplate;
-                    modal.showModal();
+                  modal.showModal();
                 }
+                
             });
         });
 
@@ -417,7 +424,6 @@
     </footer>
 
   </div>
-
   <button class="scrolly" href="#header" id="up" title="Aller en haut de la page">Haut ⬆</button>
 
 
@@ -432,7 +438,6 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/up.js"></script>
-
 
 </body>
 
