@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/splide.min.css" />
   <script src="assets/js/splide.min.js"></script>
+  <script src="assets/js/projectslist.js"></script>
   <script src="assets/js/splide-extension-auto-scroll.min.js"></script>
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -217,7 +218,7 @@
             <ul class="splide__list">
       
               <li class="splide__slide">
-                <div class="project" projet-modal="p1">
+                <div class="project" data-project-id="project1">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -231,7 +232,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project" projet-modal="p2">
+                <div class="project" data-project-id="project2">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -245,7 +246,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project">
+                <div class="project" data-project-id="project3">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -259,7 +260,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project">
+                <div class="project" data-project-id="project4">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -273,7 +274,7 @@
               </li>
       
               <li class="splide__slide">
-                <div class="project">
+                <div class="project" data-project-id="project5">
                   <div class="image-container">
                     <img src="images/AP/APtest.png">
                   </div>
@@ -305,53 +306,46 @@
       </div>
 
       <div class="modal">
-        <dialog id="p1">
-          <button close-modal class="close">X</button>
-          <div>Salut</div>
-        </dialog>
-
-        <dialog id="p2">
-          <button close-modal class="close">X</button>
-          <div>Salut2</div>
+        <dialog>
+            <button close-modal class="close">X</button>
+            <div id="project-details"></div>
         </dialog>
       </div>
 
+      
       <script>
-        const closeButtons = document.querySelectorAll("[close-modal]");
-        const modals = document.querySelectorAll("dialog");
-
-        closeButtons.forEach(closeButton => {
-            closeButton.addEventListener("click", () => {
-                modals.forEach(modal => {
-                    modal.close();
-                });
-            });
-        });
+        const modal = document.querySelector("dialog");
 
         // Écouteur d'événement pour ouvrir le modal lorsque le div de projet est cliqué
         const projectDivs = document.querySelectorAll(".project");
 
+        // Permet de récupérer le contenu du template du projet, de l'afficher dans le modal et d'ouvrir le modal
         projectDivs.forEach(projectDiv => {
             projectDiv.addEventListener("click", () => {
-                const dialogId = projectDiv.getAttribute("projet-modal");
-                const dialog = document.getElementById(dialogId);
-                if (dialog) {
-                    modals.forEach(modal => {
-                        modal.close();
-                    });
-                    dialog.showModal();
+                const projectId = projectDiv.getAttribute("data-project-id");
+                const projectTemplate = projectTemplates[projectId];
+                if (projectTemplate) {
+                    const projectDetails = document.getElementById("project-details");
+                    projectDetails.innerHTML = projectTemplate;
+                    modal.showModal();
                 }
             });
         });
 
-        // Écouteur d'événement pour fermer le modal lorsque l'utilisateur clique à l'extérieur du modal
-        modals.forEach(modal => {
-            modal.addEventListener("click", event => {
-              const dialogDimensions = modal.getBoundingClientRect();
-                if (event.clientX < dialogDimensions.left || event.clientX > dialogDimensions.right || event.clientY < dialogDimensions.top || event.clientY > dialogDimensions.bottom) {
-                    modal.close();
-                }
+        // Écouteur d'événement pour fermer le modal lorsque l'utilisateur clique sur le bouton de fermeture
+        const closeButtons = document.querySelectorAll("[close-modal]");
+        closeButtons.forEach(closeButton => {
+            closeButton.addEventListener("click", () => {
+              modal.close();
             });
+        });
+
+        // Écouteur d'événement pour fermer le modal lorsque l'utilisateur clique à l'extérieur du modal
+        modal.addEventListener("click", event => {
+          const dialogDimensions = modal.getBoundingClientRect();
+            if (event.clientX < dialogDimensions.left || event.clientX > dialogDimensions.right || event.clientY < dialogDimensions.top || event.clientY > dialogDimensions.bottom) {
+                modal.close();
+            }
         });
       </script>
     </section>
