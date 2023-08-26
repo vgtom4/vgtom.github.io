@@ -31,5 +31,9 @@ const projectTemplates = {
             </audio>
         </div>
     `,
+    game: `
+        <bold><h1>GAME</h1></bold>
+        👀soon👀
+    `,
     // ... autres projets ...
 };
