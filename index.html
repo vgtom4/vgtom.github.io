@@ -29,7 +29,6 @@
     <header id="header">
       <nav id="nav">
         <ul>
-          <li><a href="test.html">Test</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="#aProposDeMoi" class="scrolly">À propos de moi</a></li>
           <li><a href="#competences" class="scrolly">Compétences</a></li>
@@ -76,7 +75,7 @@
         </header>
         <span class="image"><img src="images/langages/moi.jpg" alt="" /></span>
       </div>
-      <a href="#aProposDeMoi" class="goto-next scrolly">Next</a>
+      <!-- <a href="#aProposDeMoi" class="goto-next scrolly">Next</a> -->
     </section>
 
     <!-- aProposDeMoi -->
@@ -107,7 +106,6 @@
           </div>
         </div>
       </div>
-      <a href="#competences" class="goto-next scrolly">Next</a>
     </section>
 
     <!-- Compétences -->
@@ -202,7 +200,6 @@
           </div>
         </div>
       </div>
-      <a href="#two" class="goto-next scrolly">Next</a>
     </section>
 
     <section id="atelier_professionnel" class="wrapper style1 special fade-up">
@@ -213,86 +210,64 @@
         </header>
 
         <h3>Projets réalisés</h3>
+        <p style="font-size: 14px;"><i>Cliquez sur l'un des projets pour voir plus de détails.</i></p>
         <section class="splide">
           <div class="splide__track">
             <ul class="splide__list">
       
               <li class="splide__slide">
                 <div needModal class="project" data-project-id="project1">
-                  <div class="image-container">
-                    <img src="images/AP/APtest.png">
-                  </div>
-                  <div class="project-name">Projet 1</div>
-                  <div class="project-description">Description du projet 1.</div>
-                  <div class="badge-container">
-                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
-                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  <div class="project-container">
+                    <div class="image-container">
+                      <img src="images/projets/appliCine.png">
+                    </div>
+                    <div class="project-name">Application de gestion pour la base de données d'un cinéma.</div>
+                    <div class="badge-container">
+                      <img class="badge" src="images/langages/c_sharp.png" title="C#">
+                      <img class="badge" src="images/langages/mySQL.png" title="MySQL">
+                    </div>
                   </div>
                 </div>
               </li>
       
               <li class="splide__slide">
                 <div needModal class="project" data-project-id="project2">
-                  <div class="image-container">
-                    <img src="images/AP/APtest.png">
-                  </div>
-                  <div class="project-name">Projet 2</div>
-                  <div class="project-description">Description du projet 2.</div>
-                  <div class="badge-container">
-                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
-                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
-                  </div>
-                </div>
-              </li>
-      
-              <li class="splide__slide">
-                <div needModal class="project" data-project-id="project3">
-                  <div class="image-container">
-                    <img src="images/AP/APtest.png">
-                  </div>
-                  <div class="project-name">Projet 3</div>
-                  <div class="project-description">Description du projet 3.</div>
-                  <div class="badge-container">
-                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
-                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                  <div class="project-container">
+                    <div class="image-container">
+                      <img src="images/projets/siteCine.png">
+                    </div>
+                    <div class="project-name">Site web de consultation des résultats d'après les données de la BDD.</div>
+                    <div class="badge-container">
+                      <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
+                      <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+                      <img class="badge" src="images/langages/PHP.png" title="PHP">
+                      <img class="badge" src="images/langages/mySQL.png" title="MySQL">
+                    </div>
                   </div>
                 </div>
               </li>
       
-              <li class="splide__slide">
-                <div needModal class="project" data-project-id="project4">
-                  <div class="image-container">
-                    <img src="images/AP/APtest.png">
-                  </div>
-                  <div class="project-name">Projet 4</div>
-                  <div class="project-description">Description du projet 4.</div>
-                  <div class="badge-container">
-                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
-                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
-                  </div>
-                </div>
-              </li>
-      
-              <li class="splide__slide">
-                <div needModal class="project" data-project-id="project5">
-                  <div class="image-container">
-                    <img src="images/AP/APtest.png">
-                  </div>
-                  <div class="project-name">Projet 5</div>
-                  <div class="project-description">Description du projet 5.</div>
-                  <div class="badge-container">
-                    <img class="badge" src="images/langages/HTML-CSS.png" title="HTML et CSS">
-                    <img class="badge" src="images/langages/javascript.png" title="JavaScript">
+              <!-- <li class="splide__slide">
+                <div needModal class="project" data-project-id="projectdemo">
+                  <div class="project-container">
+                    <div class="image-container">
+                      <img src="images/projets/demo.png">
+                    </div>
+                    <div class="project-name">demo</div>
+                    <div class="badge-container">
+                      <img class="badge" src="images/langages/demo.png" title="demo">
+                    </div>
                   </div>
                 </div>
-              </li>
+              </li> -->
+
             </ul>
           </div>
         </section>
         <script>
           new Splide( '.splide', {
                       type       : 'loop',
-                      height     :  '400px',
+                      autoHeight     :  true,
                       drag: 'free',
                       perPage    : 3,
                       perMove    : 1,
@@ -364,8 +339,26 @@
       </script>
     </section>
 
+    <section id="stages" class="wrapper style1 special fade-up">
+      <div class="container">
+        <header class="major">
+          <h2>Stages</h2>
+        </header>
+
+        <div id="yearButtons">
+          <button id="btnFirstYear" onclick="document.getElementById('firstYearText').style.display = 'block'; document.getElementById('secondYearText').style.display = 'none'">Première année</button>
+          <button id="btnSecondYear" onclick="document.getElementById('firstYearText').style.display = 'none'; document.getElementById('secondYearText').style.display = 'block'">Deuxième année</button>
+        </div>
+        <div id="content">
+          <p id="firstYearText">Contenu de la première année.</p>
+          <p id="secondYearText" style="display: none;">Contenu de la deuxième année.</p>
+        </div>
+      </div>
+    </section>
+
+
     <!-- Two -->
-    <section id="two" class="spotlight style2 right">
+    <!-- <section id="passions" class="spotlight style2 right">
       <span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
       <div class="content">
         <header>
@@ -380,10 +373,10 @@
         </ul>
       </div>
       <a href="#three" class="goto-next scrolly">Next</a>
-    </section>
+    </section> -->
 
     <!-- Three -->
-    <section id="stages" class="spotlight style3 left">
+    <!-- <section id="stages" class="spotlight style3 left">
       <span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
       <div class="content">
         <header>
@@ -398,7 +391,7 @@
         </ul>
       </div>
       <a href="#five" class="goto-next scrolly">Next</a>
-    </section>
+    </section> -->
 
     <!-- Five -->
     <section id="cv" class="wrapper style2 special fade">

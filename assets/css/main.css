@@ -4248,7 +4248,7 @@ input, select, textarea {
   /* projet AP */
   .project {
 	flex: 0 0 400px;
-	height: 400px; /* Set the height of each project */
+	height: auto; /* Set the height of each project */
 	margin: 0 10px;
 	background-color: #272833;
 	border-radius: 5px;
@@ -4257,12 +4257,16 @@ input, select, textarea {
 	color: white;
   	cursor: pointer;
   }
+
+  .project .project-container {
+	padding: 10px;
+  }
   
   .project .image-container {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 250px; /* Set the height of the image container */
+	height: 60%; /* Set the height of the image container */
 	overflow: hidden;
 	padding: 10px;
   }
@@ -4278,22 +4282,27 @@ input, select, textarea {
 	font-weight: bold;
   }
   
-  .project-description {
+  .project-seeMore {
 	margin-top: 5px;
-	font-size: 14px;
+	font-size: 12px;
   }
   
   .project .badge-container {
-  height: 50px;
+  	height: 40px;
 	display: flex;
 	justify-content: center;
 	margin-top: 10px;
+	flex-wrap: wrap;
   }
   
   .project .badge {
-	width: 50px;
-	height: 50px;
+	width: auto;
+	height: 100%;
 	margin: 0 5px;
+  }
+
+  .EasterEgg {
+	cursor: pointer;
   }
 
   dialog{
@@ -4318,6 +4327,8 @@ input, select, textarea {
 	border: none;
   }
 
-  .EasterEgg {
-	cursor: pointer;
+ dialog img {
+	width: auto;
+	height: 200px;
+	object-fit: cover;
   }

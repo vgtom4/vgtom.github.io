@@ -1,25 +1,36 @@
 const projectTemplates = {
     project1: `
         <div>
-            <img src="https://gyazo.com/a0f6ef75502ff05ad78e7778c5235ee7.gif" alt="Projet 1" title="c'est magnifique" />
-            <h2>Projet 1</h2>
-            <p>Description du projet 1.</p>
-            <!-- ... d'autres informations ... -->
+            <h2>Application de gestion pour la base de données d'un cinéma.</h2>
+            <img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />
+            
+            <p>Description du projet...</p>
+            
         </div>
     `,
     project2: `
         <div>
-            <img src="https://gyazo.com/f34b0ed1f228f5b8106acd7ff5637ce0.gif" alt="Projet 2" />
-            <h2>Projet 2</h2>
-            <p>Description du projet 2.</p>
-            <!-- ... d'autres informations ... -->
+            <h2>Site web de consultation des résultats d'après les données de la BDD.</h2>
+            <img src="images/projets/siteCine.png" alt="Projet 2" title="Page accueil"/>
+            
+            <p>Description du projet...</p>
+            
         </div>
     `,
-    project3: `
+
+
+
+
+
+
+
+    projectdemo: `
         <div>
-            <img src="https://gyazo.com/f34b0ed1f228f5b8106acd7ff5637ce0.gif" alt="Projet 3" />
-            <h2>Projet 3</h2>
-            <p>Description du projet 3.</p>
+            <h2>Projet demo</h2>
+            <img src="https://gyazo.com/a0f6ef75502ff05ad78e7778c5235ee7.gif" alt="Projet 1" title="c'est magnifique" />
+            <img src="https://gyazo.com/f34b0ed1f228f5b8106acd7ff5637ce0.gif"/>
+            
+            <p>Description du projet demo.</p>
         </div>
     `,
     audio: `
