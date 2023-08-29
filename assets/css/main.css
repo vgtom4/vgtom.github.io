@@ -4221,18 +4221,18 @@ input, select, textarea {
 	--size-square: 120px;
   }
   
-  .image-container {
+  .competence .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--size-square); /* Adjust container width */
-    height: var(--size-square); /* Adjust container height */
+    width: var(--size-square);/* Adjust container width */
+    height: var(--size-square);/* Adjust container height */
     border-radius: 100%; /* Circular frame */
     background-color: #272833; /* Gray background color */
 	overflow: hidden; /* Prevent content from overflowing */
   }
 
-  .image-container img {
+  .competence .image-container img {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
@@ -4250,13 +4250,12 @@ input, select, textarea {
 	flex: 0 0 400px;
 	height: 400px; /* Set the height of each project */
 	margin: 0 10px;
-	padding: 20px;
 	background-color: #272833;
 	border-radius: 5px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	text-align: center;
 	color: white;
-  cursor: pointer;
+  	cursor: pointer;
   }
   
   .project .image-container {
@@ -4265,11 +4264,12 @@ input, select, textarea {
 	justify-content: center;
 	height: 250px; /* Set the height of the image container */
 	overflow: hidden;
+	padding: 10px;
   }
   
   .project img {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	object-fit: cover; /* Crop the image to fit */
   }
   

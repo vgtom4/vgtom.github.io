@@ -33,7 +33,8 @@ const projectTemplates = {
     `,
     game: `
         <bold><h1>GAME</h1></bold>
-        👀soon👀
-    `,
+        <iframe src="https://scratch.mit.edu/projects/760991673/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <br/>👀soon👀<br/>
+        `,
     // ... autres projets ...
 };

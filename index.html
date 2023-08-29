@@ -300,7 +300,14 @@
                         speed: 0.3,
                       },
                       updateOnMove: true,
-                      
+                      breakpoints: {
+                        1280: {
+                          perPage: 2,
+                        },
+                        640: {
+                          perPage: 1,
+                        },
+                      }
                     } ).mount(window.splide.Extensions);
         </script>
       </div>
@@ -421,6 +428,7 @@
         <li>&copy; Untitled. All rights reserved.</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
+      
     </footer>
 
   </div>
