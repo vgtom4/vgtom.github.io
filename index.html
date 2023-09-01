@@ -20,6 +20,15 @@
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
+
+  <!-- css.gg -->
+  <link href="https://css.gg/css" rel="stylesheet" />
+
+  <!-- UNPKG -->
+  <link href="https://unpkg.com/css.gg/icons/icons.css" rel="stylesheet" />
+
+  <!-- JSDelivr -->
+  <link href="https://cdn.jsdelivr.net/npm/css.gg/icons/icons.css" rel="stylesheet"/>
 </head>
 
 <body class="is-preload landing">
@@ -287,56 +296,11 @@
         </script>
       </div>
 
-      <div class="modal">
-        <dialog>
-            <button close-modal class="close">X</button>
-            <div id="project-details"></div>
-        </dialog>
-      </div>
-
+      <dialog class="modal">
+          <button close-modal class="close">X</button>
+          <div id="project-details"></div>
+      </dialog>
       
-      <script>
-        const modal = document.querySelector("dialog");
-
-        var previousTemplate = null;
-        // Écouteur d'événement pour ouvrir le modal lorsque le div de projet est cliqué
-        const projectDivs = document.querySelectorAll("[needModal]");
-
-        // Permet de récupérer le contenu du template du projet, de l'afficher dans le modal et d'ouvrir le modal
-        projectDivs.forEach(projectDiv => {
-            projectDiv.addEventListener("click", () => {
-                const projectId = projectDiv.getAttribute("data-project-id");
-                const projectTemplate = projectTemplates[projectId];
-                if (previousTemplate!=projectTemplate){
-                  previousTemplate = projectTemplates[projectId];
-                  if (projectTemplate) {
-                      const projectDetails = document.getElementById("project-details");
-                      projectDetails.innerHTML = projectTemplate;
-                  }
-                } 
-                if (projectTemplate) {
-                  modal.showModal();
-                }
-                
-            });
-        });
-
-        // Écouteur d'événement pour fermer le modal lorsque l'utilisateur clique sur le bouton de fermeture
-        const closeButtons = document.querySelectorAll("[close-modal]");
-        closeButtons.forEach(closeButton => {
-            closeButton.addEventListener("click", () => {
-              modal.close();
-            });
-        });
-
-        // Écouteur d'événement pour fermer le modal lorsque l'utilisateur clique à l'extérieur du modal
-        modal.addEventListener("click", event => {
-          const dialogDimensions = modal.getBoundingClientRect();
-            if (event.clientX < dialogDimensions.left || event.clientX > dialogDimensions.right || event.clientY < dialogDimensions.top || event.clientY > dialogDimensions.bottom) {
-                modal.close();
-            }
-        });
-      </script>
     </section>
 
     <section id="stages" class="wrapper style1 special fade-up">
@@ -355,6 +319,8 @@
         </div>
       </div>
     </section>
+
+    
 
 
     <!-- Two -->
@@ -421,10 +387,10 @@
         <li>&copy; Untitled. All rights reserved.</li>
         <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
-      
     </footer>
 
   </div>
+  
   <button class="scrolly" href="#header" id="up" title="Aller en haut de la page">Haut ⬆</button>
 
 
@@ -439,6 +405,7 @@
   <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/up.js"></script>
+  <script src="assets/js/gestionModal.js"></script>
 
 </body>
 

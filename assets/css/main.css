@@ -4305,17 +4305,18 @@ input, select, textarea {
 	cursor: pointer;
   }
 
-  dialog{
-	width: 60%;
+  .modal{
+	width: 90%;
 	height: 800px;
 	background-color: #272833;
 	border-radius: 5px;
 	border: none;
 	box-shadow: 10px 5px rgba(0, 0, 0, 0.1);
 	color: white;
+	overflow: hidden scroll;
   }
 
-  dialog .close {
+  .modal .close {
 	position: absolute;
 	top: 10px;
 	right: 10px;
@@ -4327,7 +4328,7 @@ input, select, textarea {
 	border: none;
   }
 
- dialog img {
+  .modal img {
 	width: auto;
 	height: 200px;
 	object-fit: cover;

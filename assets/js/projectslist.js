@@ -43,9 +43,32 @@ const projectTemplates = {
         </div>
     `,
     game: `
-        <bold><h1>GAME</h1></bold>
-        <iframe src="https://scratch.mit.edu/projects/760991673/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+        <b><h1>GAME</h1></b>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/4017918/index.html" width="80%" height="700"></iframe>
+    `,
+    gameSnake: `
+        <b><h1>GAME</h1></b>
+
+        <!-- <iframe src="https://scratch.mit.edu/projects/760991673/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
         <br/>👀soon👀<br/>
+        <div class="game">
+            <div class="grille">
+                <div class="game-details">
+                    <span class="score">Score: 0</span>
+                    <span class="high-score">High Score: 0</span>
+                </div>
+
+                <div class="play-board"></div>
+
+                <div class="controls">
+                    <i data-key="ArrowLeft" class="gg-arrow-left"></i>
+                    <i data-key="ArrowUp" class="gg-arrow-up"></i>
+                    <i data-key="ArrowRight" class="gg-arrow-right"></i>
+                    <i data-key="ArrowDown" class="gg-arrow-down"></i>
+                </div>
+
+            </div>
+        </div>
         `,
     // ... autres projets ...
 };
