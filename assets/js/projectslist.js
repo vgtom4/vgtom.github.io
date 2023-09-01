@@ -45,6 +45,10 @@ const projectTemplates = {
     game: `
         <b><h1>GAME</h1></b>
         <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/4017918/index.html" width="80%" height="700"></iframe>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/4274784/picohot_html/index.html" width="80%" height="700"></iframe>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/235259/Celeste/index.html?v=1542780913" width="80%" height="700"></iframe>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/1278632/index.html?v=1574336003" width="80%" height="700"></iframe>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/496812/index.html?v=1542781860" width="80%" height="700"></iframe>
     `,
     gameSnake: `
         <b><h1>GAME</h1></b>

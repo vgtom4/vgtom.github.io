@@ -15,9 +15,6 @@ projectDivs.forEach(projectDiv => {
                 const projectDetails = document.getElementById("project-details");
                 projectDetails.innerHTML = projectTemplate;
             }
-            if (projectId == "game") {
-                
-            }
         } 
         if (projectTemplate) {
             modal.showModal();
