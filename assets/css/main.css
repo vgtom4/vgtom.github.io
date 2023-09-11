@@ -4333,3 +4333,36 @@ input, select, textarea {
 	height: 200px;
 	object-fit: cover;
   }
+
+
+  .cv-button{
+	background-color: #272d33;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 50px;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .cv-button:hover {
+	background-color: #272d33;
+	color: #e44c65;
+	
+  }
+
+  .cv-button:active {
+	background-color: #272d33;
+	color: #e44c65;
+	box-shadow: 2px 2px rgba(0, 0, 0, 0.3);
+	transform: translateY(4px);
+  }
+
+  .cv-button:focus {
+	outline: none;
+  }
