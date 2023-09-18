@@ -5,7 +5,7 @@ const projectTemplates = {
             <img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />
             
             <p>Description du projet...</p>
-            
+            <img src="images/projets/github.png" onclick="window.open('https://github.com/vgtom4/SIO1-AP-CINE-APPLI', '_blank')" style="height=80px" alt="Projet Appli" title="Lien github"/>
         </div>
     `,
     project2: `
@@ -14,7 +14,8 @@ const projectTemplates = {
             <img src="images/projets/siteCine.png" alt="Projet 2" title="Page accueil"/>
             
             <p>Description du projet...</p>
-            
+            <img src="images/projets/github.png" onclick="window.open('https://github.com/vgtom4/SIO1-AP-CINE-SITE', '_blank')" style="height=80px" alt="Projet Site" title="Lien github"/>
+
         </div>
     `,
     video: `
