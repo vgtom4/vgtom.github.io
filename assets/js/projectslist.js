@@ -3,6 +3,39 @@ const projectTemplates = {
         <div>
             <h2>Application de gestion pour la base de données d'un cinéma.</h2>
             <img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />
+            <section class="splide" id="splide3" aria-label="Basic Structure Example">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide"><img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />Slide 01</li>
+                        <li class="splide__slide"><img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />Slide 02</li>
+                        <li class="splide__slide"><img src="images/projets/appliCine.png" alt="Projet 1" title="Gestion des films" />Slide 03</li>
+                    </ul>
+                </div>
+            </section>
+            <script>
+                new Splide( '#splide3').mount();
+            </script>
+            <section
+            id="splide2"
+            class="splide"
+            aria-label="The carousel with thumbnails. Selecting a thumbnail will change the Beautiful Gallery carousel.">
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide">
+                          <img src="thumbnail01.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="thumbnail02.jpg" alt="">
+                      </li>
+                      <li class="splide__slide">
+                          <img src="thumbnail03.jpg" alt="">
+                      </li>
+                  </ul>
+            </div>
+          </section>
+                <script>
+                new Splide( '#splide2').mount();
+                </script>
             
             <p>Description du projet...</p>
             <img src="images/projets/github.png" onclick="window.open('https://github.com/vgtom4/SIO1-AP-CINE-APPLI', '_blank')" style="height=80px" alt="Projet Appli" title="Lien github"/>
@@ -53,6 +86,7 @@ const projectTemplates = {
         <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/235259/Celeste/index.html?v=1542780913" width="80%" height="700"></iframe>
         <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/1278632/index.html?v=1574336003" width="80%" height="700"></iframe>
         <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/496812/index.html?v=1542781860" width="80%" height="700"></iframe>
+        <iframe src="https://v6p9d9t4.ssl.hwcdn.net/html/6086484/index.html" width="80%" height="700"></iframe>
     `,
     gameSnake: `
         <b><h1>GAME</h1></b>

@@ -50,7 +50,7 @@
               </ul>
             </li>
             <li><a href="#cv" class="scrolly">CV</a></li>
-            <li><a href="veilleTechno.html">veille technologique</a></li>
+            <!-- <li><a href="veilleTechno.html">veille technologique</a></li> -->
             <!-- <li><a href="elements.html">Elements</a></li>
             <li><a href="#" class="button primary">Sign Up</a></li>  
           <li>
@@ -78,7 +78,7 @@
         <header>
           <p>Bonjour, je suis
             <br>
-          <h2><strong>Tom VIEILLARD--GRELET<a needModal class="EasterEgg" data-project-id="audio">.</a></strong></h2>
+          <h2><strong>Tom VIEILLARD--GRELET<!-- <a needModal class="EasterEgg" data-project-id="audio">.</a> --></strong></h2>
           </p>
           <p>Bienvenue sur mon Portfolio.</p>
         </header>
@@ -95,22 +95,13 @@
             <div class="col-4 col-12-medium">
               <header>
                 <h2>À propos de moi</h2>
-                <p>Nascetur eu nibh vestibulum amet gravida nascetur praesent</p>
+                <p></p>
               </header>
             </div>
-            <div class="col-4 col-12-medium">
-              <p>Feugiat accumsan lorem eu ac lorem amet sed accumsan donec.
-                Blandit orci porttitor semper. Arcu phasellus tortor enim mi
-                nisi praesent dolor adipiscing. Integer mi sed nascetur cep aliquet
-                augue varius tempus lobortis porttitor accumsan consequat
-                adipiscing lorem dolor.</p>
-            </div>
-            <div class="col-4 col-12-medium">
-              <p>Morbi enim nascetur et placerat lorem sed iaculis neque ante
-                adipiscing adipiscing metus massa. Blandit orci porttitor semper.
-                Arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer
-                mi sed nascetur cep aliquet augue varius tempus. Feugiat lorem
-                ipsum dolor nullam.</p>
+            <div class="">
+              <p>Étudiant en deuxième année de <a needModal data-project-id="video">BTS SIO (Services Informatiques aux Organisations)</a> au lycée Lamartine de Mâcon, j'ai
+                choisi l'option SLAM (Solutions Logicielles et Applications Métiers) centré sur le développement d'application .NET et WEB.
+                J'ai intégré cette formation dans le but de développer mes compétences informatiques et professionnelles.</p>
             </div>
           </div>
         </div>
@@ -122,7 +113,7 @@
       <div class="container">
 
         <header class="major">
-          <h2>Compétences informatique</h2>
+          <h2>Compétences informatiques</h2>
         </header>
 
         <h3>Langages de programmation familiers :</h3>
@@ -187,25 +178,37 @@
 
         <header class="major"></header>
         
-        <h3>Prise en main logiciels :</h3>
+        <h3>Prise en main services :</h3>
         <div class="competence-container">
           <div class="competence">
             <div class="image-container">
-              <img src="images/IDE/IntelliJ_IDEA.png">
+              <img src="images/services/IntelliJ_IDEA.png">
             </div>
             <span class="competence-name">Intellij IDEA</span>
           </div>
           <div class="competence">
             <div class="image-container">
-              <img src="images/IDE/Visual_Studio_Code.png">
+              <img src="images/services/Visual_Studio_Code.png">
             </div>
             <span class="competence-name">Visual Studio Code</span>
           </div>
           <div class="competence">
             <div class="image-container">
-              <img src="images/IDE/Visual_Studio.png">
+              <img src="images/services/Visual_Studio.png">
             </div>
             <span class="competence-name">Visual Studio</span>
+          </div>
+          <div class="competence">
+            <div class="image-container">
+              <img src="images/services/mssms.png">
+            </div>
+            <span class="competence-name">SQL Server <br>Management Studio</span>
+          </div>
+          <div class="competence">
+            <div class="image-container">
+              <img src="images/services/figma.png">
+            </div>
+            <span class="competence-name">Figma</span>
           </div>
         </div>
       </div>
@@ -219,13 +222,13 @@
         </header>
 
         <h3>Projets réalisés</h3>
-        <p style="font-size: 14px;"><i>Cliquez sur l'un des projets pour voir plus de détails.</i></p>
-        <section class="splide">
+        <p style="font-size: 14px;"><i>Cliquez sur l'un des projets pour accéder au code source de celui-ci et voir plus de détails.</i></p>
+        <section class="splide" id="splide1">
           <div class="splide__track">
             <ul class="splide__list">
       
               <li class="splide__slide">
-                <div needModal class="project" data-project-id="project1">
+                <div class="project" data-project-id="project1" onclick="window.open('https://github.com/vgtom4/SIO1-AP-CINE-APPLI', '_blank')">
                   <div class="project-container">
                     <div class="image-container">
                       <img src="images/projets/appliCine.png">
@@ -240,7 +243,7 @@
               </li>
       
               <li class="splide__slide">
-                <div needModal class="project" data-project-id="project2">
+                <div class="project" data-project-id="project2" onclick="window.open('https://github.com/vgtom4/SIO1-AP-CINE-SITE', '_blank')">
                   <div class="project-container">
                     <div class="image-container">
                       <img src="images/projets/siteCine.png">
@@ -255,26 +258,12 @@
                   </div>
                 </div>
               </li>
-      
-              <!-- <li class="splide__slide">
-                <div needModal class="project" data-project-id="projectdemo">
-                  <div class="project-container">
-                    <div class="image-container">
-                      <img src="images/projets/demo.png">
-                    </div>
-                    <div class="project-name">demo</div>
-                    <div class="badge-container">
-                      <img class="badge" src="images/langages/demo.png" title="demo">
-                    </div>
-                  </div>
-                </div>
-              </li> -->
 
             </ul>
           </div>
         </section>
         <script>
-          new Splide( '.splide', {
+          new Splide( '#splide1', {
                       type       : 'loop',
                       autoHeight     :  true,
                       drag: 'free',
@@ -309,13 +298,26 @@
           <h2>Stages</h2>
         </header>
 
-        <div id="yearButtons">
-          <button id="btnFirstYear" onclick="document.getElementById('firstYearText').style.display = 'block'; document.getElementById('secondYearText').style.display = 'none'">Première année</button>
-          <button id="btnSecondYear" onclick="document.getElementById('firstYearText').style.display = 'none'; document.getElementById('secondYearText').style.display = 'block'">Deuxième année</button>
+        <div id="btnAnnee">
+          <!-- <button id="btnPremiereAnnee" onclick="document.getElementById('premiereAnnee').style.display = 'block'; document.getElementById('deuxiemeAnnee').style.display = 'none'">Première année</button> -->
+          <!-- <button id="btnDeuxiemeAnnee" onclick="document.getElementById('premiereAnnee').style.display = 'none'; document.getElementById('deuxiemeAnnee').style.display = 'block'">Deuxième année</button> -->
         </div>
         <div id="content">
-          <p id="firstYearText">Contenu de la première année.</p>
-          <p id="secondYearText" style="display: none;">Contenu de la deuxième année.</p>
+          <div id="premiereAnnee">
+            <p >Stage de première année.</p>
+            <p >Lieu du stage : société SERA - Chasselay</p>
+            <p ><img src="images/stages/premiereAnnee/sera.jpg" style="width: 60%;"/></p>
+            <p >Période du stage : 22 mai - 30 juin 2023</p>
+            <p >Travaux réalisés :
+              <br>- Portage d'un service windows de nettoyage de base de données.
+              <br>- Evolution de l'interface d'un module de l'application métier de la société.
+            </p>
+            
+          </div>
+          
+          <!-- <div id="deuxiemeAnnee" style="display: none;">
+            <p >Contenu de la deuxième année.</p>
+          </div> -->
         </div>
       </div>
     </section>
