@@ -4304,6 +4304,37 @@ input, select, textarea {
 	margin: 0 5px;
   }
 
+  .competences-acquises-container {
+	position: relative;
+	display: inline-block;
+	/* centre */
+	margin-left: 50%;
+	transform: translateX(-50%);
+
+  }
+
+  .competences-acquises {
+	visibility: hidden;
+	background-color: #1c1d26;
+	color: #fff;
+	text-align: left;
+	border-radius: 6px;
+	padding: 8px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	right: -50%;
+	left: 50%;
+	margin-left: -100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+  }
+
+  .competences-acquises-container:hover .competences-acquises {
+	visibility: visible;
+	opacity: 1;
+  }
+
   .EasterEgg {
 	cursor: pointer;
   }
