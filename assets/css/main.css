@@ -4248,6 +4248,25 @@ input, select, textarea {
 	font-weight: 400;
   }
 
+  .more-info {
+	visibility: hidden;
+	background-color: #272833;
+	color: #fff;
+	text-align: left;
+	border-radius: 6px;
+	position: absolute;
+	opacity: 0;
+	transition: opacity 0.3s;
+	padding: 8px;
+	margin-top: 14%;
+	z-index: 1;
+  }
+
+  .competence:hover .more-info {
+	visibility: visible;
+	opacity: 1;
+  }
+
   /* projet AP */
   .project {
 	flex: 0 0 400px;
@@ -4322,7 +4341,7 @@ input, select, textarea {
 	padding: 8px;
 	position: absolute;
 	z-index: 1;
-	bottom: 125%;
+	bottom: 100%;
 	right: -50%;
 	left: 50%;
 	margin-left: -100%;
