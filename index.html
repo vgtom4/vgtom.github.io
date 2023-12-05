@@ -338,12 +338,6 @@
                     } ).mount(window.splide.Extensions);
         </script>
       </div>
-
-      <dialog class="modal">
-          <i close-modal class="close gg-close"></i>
-          <div id="project-details"></div>
-      </dialog>
-      
     </section>
 
     <section id="stages" class="wrapper style1 special fade-up">
@@ -438,6 +432,10 @@
       </ul>
       <ul>
         <a needModal data-project-id="stageeliot" class="EasterEgg">💻</a>
+        <dialog class="modal">
+          <i close-modal class="close gg-close"></i>
+          <div id="project-details"></div>
+        </dialog>
       </ul>
     </footer>
 
@@ -458,6 +456,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/up.js"></script>
   <script src="assets/js/gestionModal.js"></script>
+  <script>function validerMot() { if (document.getElementById("mot").value === "ouiouibaguette") {document.getElementById("theGames").style.display = "block";} else {document.getElementById("theGames").style.display = "none";}}</script>
 
 </body>
 
