@@ -58,7 +58,35 @@ const projectTemplates = {
 
 
 
-
+    stageeliot: `
+        <div>
+            <h2>Stage première année : studio de jeu vidéo</h2>
+            <img src="images/eliot/unrealengine.png"/>
+           
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="width: 50%; text-align: center;">
+                        <img src="images/eliot/blueprint.png" style="width: 100%; height: 100%"/>
+                        <p>BluePrint</p>
+                    </td>
+                    <td style="width: 50%; text-align: center;">
+                        <img src="images/eliot/dash.gif" style="width: 100%; height: 100%"/>
+                        <p>Sytème de dash</p>
+                    </td style="width: 50%; text-align: center;">
+                </tr>
+                <tr>
+                    <td style="width: 50%; text-align: center;">
+                        <img src="images/eliot/door.gif" style="width: 100%; height: 100%"/>
+                        <p>Animation d'ouverture de porte</p>
+                    </td>
+                    <td style="width: 50%; text-align: center;">
+                        <img src="images/eliot/mecagrab.gif" style="width: 100%; height: 100%"/>
+                        <p>Mécanique de grab</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    `,
 
 
     projectdemo: `
