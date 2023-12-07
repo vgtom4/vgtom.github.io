@@ -3403,6 +3403,11 @@ input, select, textarea {
 			position: absolute;
 			right: 1em;
 			top: 0;
+			position: fixed;
+			width: 100%;
+			background-color: rgba(39, 40, 51, 0.965);
+			/* alignement à droite */
+			text-align: right;
 		}
 
 			#header nav ul {
@@ -3446,9 +3451,9 @@ input, select, textarea {
 	}
 
 	body.landing #header {
-		background: transparent;
+		/* background: transparent; */
 		box-shadow: none;
-		position: absolute;
+		/* position: absolute; */
 	}
 
 /* Banner */
