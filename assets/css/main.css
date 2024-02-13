@@ -4272,6 +4272,11 @@ input, select, textarea {
 	opacity: 1;
   }
 
+  .more-info img {
+	height: 50px;
+	vertical-align: middle;
+  }
+
   /* projet AP */
   .project {
 	flex: 0 0 400px;
