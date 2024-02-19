@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body id="top">
+<body>
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -38,78 +38,32 @@
       }
     </style>
 
-    <!-- ------------------------------------------------------------------------------------------- -->
-
-    <h2 id="title" style="text-align: center; margin: 50px;"><strong>Veille Technologique</strong></h2>
-
-
-    <style>
-      .contenerSujet {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        text-align: center;
-      }
-
-      .itemSujet {
-        background-color: #272833;
-        padding: 10px;
-        border-radius: 10px;
-        height: auto;
-        cursor: pointer;
-        color: white;
-        width: 40%;
-        font-size: 30px;
-        min-height: 500px;
-        transition: 0.2s;
-      }
-
-      .itemSujet:hover {
-        background-color: #3a3e4c;
-        transition: 0.3s;
-        transform: scale(1.1);
-      }
-
-      .itemSujet img {
-        width: 100%;
-        height: 300px;
-        object-fit: contain;
-        border-radius: 10px;
-        padding: 10px;
-      }
-    </style>
-
-    <section style="margin-top: 20px; padding: 10px;">
-      <div style="text-align: center;">
-        <h3>Sujets traités :</h3>
-      </div>
-
-      <div class="contenerSujet">
-        <a class="itemSujet" href="veille_technologique_sujet_1.html">
-          <img src="images/veille/IA/IA.jpg" alt="" />
-          <p>Le développement des IA générative et leurs applications dans les différents secteurs
-            d'activités.</p>
-        </a>
-
-        <a class="itemSujet" href="veille_technologique_sujet_2.html">
-          <img src="images/veille/sujet2/ordiQuantique.jpg" alt="" />
-          <p>L'utilisation de l'ordinateur quantique pour sécuriser le cryptage des données.</p>
-        </a>
-      </div>
-
-    </section>
-
-
-    <section style="margin-top: 20px; padding: 10px;">
-      <div style="text-align: center;">
-        <h2>Organisation de la veille</h2>
-        <p>En cours d'écriture.</p>
+    <!-- Banner -->
+    <section id="banner">
+      <div class="content">
+        <header>
+          <h2><strong>L'utilisation de l'ordinateur quantique pour sécuriser le cryptage des données.</strong></h2>
+        </header>
+        <img class="image" src="images/veille/sujet2/ordiQuantique.jpg" alt="" />
       </div>
     </section>
 
     <!-- ------------------------------------------------------------------------------------------- -->
+
+    <section id="whatsAIG" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div>
+              <h2>En cours d'écriture...</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
 
 
     <!-- Footer -->
@@ -134,7 +88,7 @@
 
   </div>
 
-  <button class="scrolly" href="#top" id="up" title="Aller en haut de la page">⬆</button>
+  <button class="scrolly" href="#banner" id="up" title="Aller en haut de la page">⬆</button>
 
   <script src="assets/js/up.js"></script>
   <script src="assets/js/jquery.min.js"></script>
