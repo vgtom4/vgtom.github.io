@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="assets/css/main.css">
 </head>
 
-<body>
+<body id="top">
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -22,11 +22,12 @@
             <a href="index.html#stages" class="scrolly">Stages</a>
           </li>
           <li><a href="index.html#cv" class="scrolly">CV</a></li>
-          <li><a href="veilleTechno.html">veille technologique</a></li>
-          <!-- <ul>
-                    <li><a href="#">Ordinateur Quantique</a></li>
-                    <li><a href="#">Optimisation stockage donnée</a></li>
-                </ul> -->
+          <li><a href="veilleTechno.html">veille technologique</a>
+            <ul style="text-align: center; font-size: 20px;">
+              <li><a href="veille_technologique_sujet_1.html">Sujet 1</a></li>
+              <li><a href="#">Sujet 2</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -37,670 +38,78 @@
       }
     </style>
 
-    <!-- Banner -->
-    <section id="banner">
-      <div class="content">
-        <header>
-          <h2><strong>Le développement des IA générative et leurs applications dans les différents secteurs
-              d'activités.</strong></h2>
-        </header>
-        <span class="image"><img src="images/veille/IA/IA.jpg" alt="" /></span>
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <h2 id="title" style="text-align: center; margin: 50px;"><strong>Veille Technologique</strong></h2>
+
+
+    <style>
+      .contenerSujet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        text-align: center;
+      }
+
+      .itemSujet {
+        background-color: #272833;
+        padding: 10px;
+        border-radius: 10px;
+        height: auto;
+        cursor: pointer;
+        color: white;
+        width: 40%;
+        font-size: 30px;
+        min-height: 500px;
+        transition: 0.2s;
+      }
+
+      .itemSujet:hover {
+        background-color: #3a3e4c;
+        transition: 0.3s;
+        transform: scale(1.1);
+      }
+
+      .itemSujet img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+        border-radius: 10px;
+        padding: 10px;
+      }
+    </style>
+
+    <section style="margin-top: 20px; padding: 10px;">
+      <div style="text-align: center;">
+        <h3>Sujets traités :</h3>
+      </div>
+
+      <div class="contenerSujet">
+        <a class="itemSujet" href="veille_technologique_sujet_1.html">
+          <img src="images/veille/IA/IA.jpg" alt="" />
+          <p>Le développement des IA générative et leurs applications dans les différents secteurs
+            d'activités.</p>
+        </a>
+
+        <a class="itemSujet" href="veille_technologique_sujet_2.html">
+          <img src="images/veille/ordiQuantique.jpg" alt="" />
+          <p>L'utilisation de l'ordinateur quantique pour sécuriser le cryptage des données</p>
+        </a>
+      </div>
+
+    </section>
+
+
+    <section style="margin-top: 20px; padding: 10px;">
+      <div style="text-align: center;">
+        <h2>Organisation de la veille</h2>
+        <p>En cours d'écriture.</p>
       </div>
     </section>
 
     <!-- ------------------------------------------------------------------------------------------- -->
-
-    <section id="whatsAIG" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>Qu'est-ce que l'IA (Intelligence Artificielle) générative ?</h2>
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/hierarchy.png" style="width: 100%; border-radius: 100%;" alt="" />
-                  </td>
-                  <td style="width: 70%; vertical-align:middle;">
-                    L'intelligence artificielle générative (IA générative) est une branche de l'intelligence
-                    artificielle (IA) qui se concentre sur le développement de modèles capables de générer des données
-                    nouvelles et originales.
-                    L'objectif principal est de créer des algorithmes qui peuvent produire des contenus tels que des
-                    images, du texte, de la musique, etc., qui semblent être créés par des humains.
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://synoptek.com/insights/it-blogs/data-insights/ai-ml-dl-and-generative-ai-face-off-a-comparative-analysis/"
-                      target="_blank">Source: synoptek.com</a>
-                  </td>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ------------------------------------------------------------------------------------------- -->
-
-
-    <section id="howWork" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>Comment fonctionne l'IA générative ?</h2>
-              L'IA générative, qui repose sur des techniques d'apprentissage automatique, explore les modèles et les
-              tendances au sein de divers types de données, tels que du texte, des images, de la musique ou des vidéos.
-              Pour accomplir cette tâche, l'IA générative utilise des informations apprises à partir de différentes
-              approches d'apprentissage machine, notamment l'apprentissage supervisé, non supervisé et par
-              renforcement.<br><br>
-
-              <h3>Quelques explications sur les méthodes d'apprentissages machine :</h3>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td style="width: 70%; vertical-align:middle;">
-                    <h3>L'approche de l'apprentissage supervisé</h3>
-                    L'enseignement guidé est une méthode d'IA où un système est formé à partir de données d'entraînement
-                    étiquetées.
-                    Ces données sont composées d'exemples d'entrées et de leurs sorties correspondantes.
-                    L'IA a pour fonction d'apprendre à associer les entrées aux sorties correctes, et avec le temps, il
-                    est capable de prédire la sortie pour de nouvelles entrées.
-                    Cette méthode est couramment utilisée dans de nombreuses applications d'IA, comme la détection de
-                    spam, la reconnaissance de la parole et la prédiction du temps.
-                  </td>
-                  <td>
-                    <img src="images/veille/IA/superviseML.png"
-                      onclick="window.open('https://blent.ai/blog/a/apprentissage-supervise-definition', '_blank')"
-                      title="Voir le site d'origine de l'image" style="width: 100%; cursor: pointer;" alt="" />
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://kodkodkod.studio/fr/agence-web/intelligence-artificielle/comment-integrer-ia/trois-types-apprentissages-ia#bloc1"
-                      target="_blank" title="Publié le 3 oct. 2023">Source: kodkodkod.studio</a>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td style="width: 70%; vertical-align:middle;">
-                    <h3>L'approche de l'apprentissage non supervisé</h3>
-                    L'apprentissage non supervisé est une autre méthode utilisée en IA.
-                    Ici, le système apprend tout seul en découvrant des schémas ou des motifs dans les données qui ne
-                    sont pas déjà marquées ou classées.
-                    C'est comme si on lui donnait un tas de pièces de puzzle sans l'image de référence, et il doit
-                    comprendre comment les pièces s'emboîtent ensemble.
-                    C'est différent de l'apprentissage supervisé où on lui donne des exemples précis pour assimiler les
-                    choses.
-                  </td>
-                  <td>
-                    <img src="images/veille/IA/nonsuperviseML.png" style="width: 100%;" alt="" />
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://kodkodkod.studio/fr/agence-web/intelligence-artificielle/comment-integrer-ia/trois-types-apprentissages-ia#bloc1"
-                      target="_blank" title="Publié le 3 oct. 2023">Source: kodkodkod.studio</a>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/renforcementML.png"
-                      onclick="window.open('https://blent.ai/blog/a/apprentissage-supervise-definition', '_blank')"
-                      title="Voir le site d'origine de l'image"
-                      style="width: 100%; cursor: pointer; background-color: azure;" alt="" />
-                  </td>
-                  <td style="width: 70%; vertical-align:middle;">
-                    <h3>L'approche de l'apprentissage par renforcement</h3>
-                    L'apprentissage par renforcement est une autre façon dont une IA peut apprendre.
-                    Imaginez que l'IA est comme un enfant qui joue à un jeu vidéo pour la première fois.
-                    Au début, l'enfant ne sait pas comment jouer et fait beaucoup d'erreurs.
-                    Mais à chaque fois qu'il fait quelque chose de bien, il gagne des points (c'est la récompense).
-                    Et à chaque fois qu'il fait une erreur, il perd des points ou le jeu devient plus difficile (c'est
-                    la punition).<br>
-
-                    Au fur et à mesure qu'il joue, l'enfant apprend quels mouvements lui font gagner des points et quels
-                    mouvements rendent le jeu plus difficile.
-                    Il commence alors à faire plus de mouvements qui lui font gagner des points et à éviter ceux qui
-                    rendent le jeu plus difficile.
-                    C'est exactement ce que fait l'IA dans l'apprentissage par renforcement : elle apprend à prendre des
-                    décisions qui maximisent ses récompenses.
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://kodkodkod.studio/fr/agence-web/intelligence-artificielle/comment-integrer-ia/trois-types-apprentissages-ia#bloc1"
-                      target="_blank" title="Publié le 3 oct. 2023">Source: kodkodkod.studio</a>
-                  </td>
-                </tr>
-              </table>
-
-              <h3>Utilisation des données triées :</h3>
-
-              <table style="background-color: #1c1d26; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td style="width: 65%; vertical-align:top;">
-                    Ainsi, une fois que ces méthodes d'apprentissage machine ont acquis une compréhension approfondie
-                    des
-                    modèles et des relations au sein des données, elles peuvent être mises à contribution pour générer
-                    de
-                    nouvelles données. Ces nouvelles données sont créées en utilisant des techniques avancées telles que
-                    les
-                    Generative Adversarial Networks (GANs), qui exploitent intelligemment les connaissances accumulées
-                    pour
-                    produire des contenus originaux et pertinents.
-                  </td>
-                  <td>
-                    <img src="images/veille/IA/typeModelAI.jpg" style="width: 100%;vertical-align:middle;" alt="" /><br>
-                  </td>
-                </tr>
-              </table>
-
-              <h3>Exemple de modèle modèle d'IA générative :</h3>
-
-
-
-              <!-- <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/GPT.jpg" style="width: 100%; vertical-align:middle;" alt="" />
-                  </td>
-                  <td style="width: 60%; vertical-align:middle;">
-                    <h3>L'approche Generative Pre-trained Transformer (GPT)</h3>
-                    __________________________________
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://en.wikipedia.org/wiki/Generative_pre-trained_transformer" target="_blank">Source:
-                      wikipedia.org</a>
-                  </td>
-              </table> -->
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/GAN.jpg" style="width: 100%; vertical-align:middle;" alt="" />
-                  </td>
-                  <td style="width: 60%; vertical-align:middle;">
-                    <h3>L'approche Generative Adversarial Networks (GAN)</h3>
-                    Les GAN sont composés de deux réseaux neuronaux, un générateur et un discriminateur :<br><br>
-
-                    <b>• Générateur</b> : Le générateur prend en entrée des données aléatoires (par exemple, du
-                    bruit) et génère des données synthétiques, telles que des images, des textes ou d'autres types de
-                    contenus. Son
-                    objectif est de créer des données qui ressemblent autant que possible à celles d'un ensemble de
-                    données réelles.<br>
-
-                    <b>• Discriminateur</b> : Le discriminateur prend en entrée à la fois des données réelles
-                    provenant d'un ensemble de données d'entraînement réel et des données générées par le générateur.
-                    Son rôle est de distinguer entre les données réelles et les données générées par le générateur.
-                    Il cherche à améliorer sa capacité à faire cette distinction au fil de l'entraînement.
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://www.zendesk.com.br/blog/generative-ai-guide/" target="_blank">Source:
-                      zendesk.com</a>
-                  </td>
-              </table>
-              <a href="https://www.zendesk.com.br/blog/generative-ai-guide/" target="_blank">Informations sur d'autres
-                modèles</a>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ------------------------------------------------------------------------------------------- -->
-
-
-    <section id="type" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>Les différents service d'IA générative.</h2>
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr style="text-align: center;">
-                  <td style="width: 50%; vertical-align:middle;">
-                    <h3>Génération de texte</h3>
-                    A partir d'un prompt (texte de départ), l'IA générative peut créer un texte correspondant.
-                    <div
-                      style="display: flex;flex-wrap: wrap;height: 70px;vertical-align:middle;text-align: center;justify-content: center;align-items: center;">
-                      <img src="images/veille/IA/chatGPT.png" style="height: 100%; padding: 5px; cursor: pointer;"
-                        alt="" title="ChatGPT développé par OpenAI."
-                        onclick="window.open('https://chat.openai.com/', '_blank')" />
-                      <img src="images/veille/IA/bard.png" style="height: 100%; padding: 5px; cursor: pointer;" alt=""
-                        title="Bard développé par Google."
-                        onclick="window.open('https://bard.google.com/chat', '_blank')" />
-                      <img src="images/veille/IA/claude.png" style="height: 100%; padding: 5px; cursor: pointer;" alt=""
-                        title="Claude AI développé par Anthropic."
-                        onclick="window.open('https://claude.ai/', '_blank')" />
-                    </div>
-                    <img src="images/veille/IA/demoChatGPT.png" title="Génération d'une réponse avec ChatGPT"
-                      style="width: 100%; padding: 5px;" alt="" /><br>
-                    <i>Génération d'une réponse avec ChatGPT</i>
-                  </td>
-                  <td style="width: 50%; vertical-align:middle; text-align: center;">
-                    <h3>Génération d'image</h3>
-                    A partir d'une description textuelle, l'IA générative peut créer une image correspondante.
-                    <div
-                      style="display: flex;flex-wrap: wrap;height: 70px;vertical-align:middle;text-align: center;justify-content: center;align-items: center;">
-                      <img src="images/veille/IA/dalle.png" style="height: 100%; padding: 5px; cursor: pointer;" alt=""
-                        title="DALL-E développé par OpenAI."
-                        onclick="window.open('https://labs.openai.com/', '_blank')" /><br>
-                      <img src="images/veille/IA/midjourney.png"
-                        style="height: 100%; padding: 5px; background-color: azure; cursor: pointer;" alt=""
-                        title="Midjourney" onclick="window.open('https://www.midjourney.com/', '_blank')" /><br>
-                    </div>
-                    <img src="images/veille/IA/demoDalle.png" title="Génération d'une image avec DALL-E 2"
-                      style="width: 100%; padding: 5px;" alt="" /><br>
-                    <i>Génération d'une réponse avec DALL-E 2</i>
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: center;">
-                    Autres exemples de services d'IA générative :<br>
-                    <img src="images/veille/IA/landscapeAIgen.jpg" style="height: 700px; padding: 5px;" alt="" /><br>
-                  </td>
-                </tr>
-                <!-- <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="__________________________________" target="_blank">Source:
-                      __________________________________</a>
-                  </td>
-                </tr> -->
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ------------------------------------------------------------------------------------------- -->
-
-
-    <!-- <section id="actors" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>Qui sont les grands acteurs dans le développement des IA générative ?</h2>
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/openAI.png" style="width: 100%; background-color: azure; padding: 5px;"
-                      alt="" />
-                  </td>
-                  <td style="width: 80%; vertical-align:middle;">
-                    <h3>OpenAI</h3>
-                    OpenAI est une entreprise de recherche à but non lucratif qui a pour objectif de promouvoir et de
-                    développer une intelligence artificielle amicale pour le bénéfice de l'humanité en tant que tout.
-                    <br>
-                    Site : <a href="https://openai.com/about/" target="_blank">openai.com</a>
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2"><i>Quelques projets :</i></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td style="text-align: right;">
-                    <img src="images/veille/IA/chatGPT.png" style="width: 50%; padding: 5px;" alt="" /><br>
-                    <a href="https://chat.openai.com/" target="_blank">Essayer ChatGPT</a>
-                  </td>
-                  <td style="width: 80%; vertical-align:middle;">
-                    <b>ChatGPT :</b>
-                    ChatGPT est un modèle d'intelligence artificielle développé par OpenAI. Il s'agit d'une version
-                    interactive de la famille des modèles GPT (Generative Pre-trained Transformer). Conçu pour la
-                    conversation, ChatGPT est entraîné sur de vastes ensembles de données pour comprendre et générer du
-                    texte de manière cohérente. Les utilisateurs peuvent interagir avec ChatGPT en lui posant des
-                    questions, en demandant des informations, ou en engageant une conversation sur divers sujets. Il
-                    peut générer des réponses en langage naturel basées sur le contexte de la conversation.<br>
-                    --\> <i>Génération de texte</i>
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td style="text-align: right;">
-                    <img src="images/veille/IA/dalle.png" style="width: 50%; padding: 5px;" alt="" /><br>
-                    <a href="https://labs.openai.com/" target="_blank">Essayer DALL-E</a>
-                  </td>
-                  <td style="width: 80%; vertical-align:middle;">
-                    <b>DALL-E :</b>
-                    Ce modèle utilise une approche de réseau de neurones génératifs pour créer des images à partir de
-                    descriptions textuelles. Contrairement à d'autres modèles qui génèrent des images réalistes à partir
-                    de données existantes, DALL-E est capable de créer des images entièrement nouvelles en fonction des
-                    concepts fournis en langage naturel. Il a été particulièrement remarqué pour sa capacité à générer
-                    des images créatives et originales en réponse à des instructions textuelles.<br>
-                    --\> <i>Génération d'image</i>
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2"><i>Exemples d'utilisation :</i><br>
-                    <div style="flex-wrap: wrap; display: flex;">
-                      <img src="images/veille/IA/demoChatGPT.png" title="Génération d'une réponse avec ChatGPT"
-                        style="width: 50%; padding: 5px;" alt="" /><br>
-                      <img src="images/veille/IA/demoDalle.png" title="Génération d'une image avec DALL-E 2"
-                        style="width: 50%; padding: 5px;" alt="" /><br>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/google.png" style="width: 100%; background-color: azure; padding: 5px;"
-                      alt="" />
-                  </td>
-                  <td style="width: 80%; vertical-align:middle;">
-                    <h3>Google</h3>
-                    tttttttttttt
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2"><i>Quelques projets :</i></td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td style="text-align: right;">
-                    <img src="images/veille/IA/bard.png" style="width: 50%; padding: 5px;" alt="" /><br>
-                    <a href="____________" target="_blank">__________</a>
-                  </td>
-                  <td style="width: 80%; vertical-align:middle;">
-                    <b>__________</b>
-                    ____________________________________________________________________________________________
-                    ____________________________________________________________________________________________<br>
-                    --\> <i>__________</i>
-                  </td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <section id="secteurs" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
-      <div class="content">
-        <div class="container">
-          <div class="row">
-            <div>
-              <h2>Les secteurs touchés par l'IA générative</h2>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>La santé</h3>
-                    Dans le domaine de la santé, les outils d’IA générative peuvent être utilisés pour la découverte et
-                    le développement de médicaments, la prévision de l’évolution des maladies et l’analyse d’imagerie
-                    médicale. En analysant de grandes quantités de données médicales, l’IA générative peut identifier
-                    des médicaments candidats potentiels ou prédire la façon dont les patients réagissent à différents
-                    traitements. De plus, l’IA générative peut analyser des images médicales, telles que des
-                    radiographies et des IRM, pour aider les médecins à diagnostiquer plus précisément les maladies et
-                    affections.<br>
-
-                    De plus, l’IA générative peut également être utilisée dans la recherche génétique pour voir comment
-                    l’expression des gènes change en réponse à des changements spécifiques dans les gènes. Cela pourrait
-                    accélérer le développement des thérapies géniques et améliorer le processus de traitement en
-                    prédisant à quelle thérapie les gènes des patients répondent le mieux.
-                    <div style="text-align: right;">
-                      <a href="https://www.solulab.com/generative-ai/" target="_blank">Source: solulab.com</a>
-                    </div>
-                    <br><br>
-
-                    Exemple :
-                    Google travail sur "Med-PaLM", une IA générative qui se vise à devenir une source de conseils et
-                    d'informations pour les patients, remplaçant progressivement les recherches sur Google.
-                    Celle-ci est capable de répondre à des questions sur des images médicales, de conseils
-                    sur les médicaments ou encore de fournir des informations sur les maladies.
-                    <br>
-                    <div style="text-align: center; display: flex; flex-wrap: wrap;">
-                      <img src="images/veille/IA/medpalm.gif" style="width: 40%; padding: 5px;" alt="" />
-                      <img src="images/veille/IA/medpalmschema.png"
-                        style="width: 60%; object-fit:contain; padding: 5px;" alt="" /><br>
-                      <i>Med-Palm analyse l'image et répond à la question de l'utilisateur</i><br>
-                    </div>
-
-                    <div style="text-align: right;">
-                      <a href="https://www.rts.ch/info/sciences-tech/14069517-lia-generative-dans-le-secteur-de-la-sante-une-revolution-imminente.html"
-                        target="_blank">Source: rts.fr - L'IA générative dans le secteur de la santé: une révolution
-                        imminente - 4 juin 2023</a>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>L'éducation</h3>
-                    Dans le secteur de l’éducation, l’IA générative peut être utilisée dans l’apprentissage adaptatif,
-                    la création de contenu éducatif et l’engagement des étudiants. En analysant les données sur les
-                    performances des élèves, l'IA générative peut aider les enseignants à créer des expériences
-                    d'apprentissage plus personnalisées, en adaptant le programme aux besoins de chaque élève. En outre,
-                    l’IA générative peut être utilisée pour créer du contenu éducatif, tel que des quiz et des jeux, qui
-                    engagent les élèves et renforcent l’apprentissage.
-                    <div style="text-align: right;">
-                      <a href="https://www.solulab.com/generative-ai/" target="_blank">Source: solulab.com</a>
-                    </div>
-                    <br>
-                    <b>L'IA générative peut aider les enseignants à gagner du temps, mais elle ne doit pas remplacer leur
-                    rôle essentiel.</b><br>
-
-                    L'IA générative peut être utilisée pour automatiser certaines tâches, telles que la préparation des
-                    cours ou la correction des devoirs. Cela peut libérer du temps aux enseignants pour se concentrer
-                    sur d'autres aspects de leur travail, tels que la création d'activités pédagogiques engageantes et
-                    l'accompagnement personnalisé des élèves.
-                    <img src="images/veille/IA/educationAI.jpg" style="width: 100%; padding: 5px;" alt="" /><br>
-                    <div style="text-align: right;">
-                      <a href="https://www.ih2ef.gouv.fr/lintelligence-artificielle-generative-dans-leducation-defis-et-opportunites-pour-les-enseignants"
-                        target="_blank">Source: ih2ef.gouv.fr - L'intelligence artificielle générative dans l'éducation
-                        : défis et opportunités pour les enseignants, élèves ou parents. Entretien flash avec Yannig
-                        Raffenel - 29 juin 2023</a>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>La communication</h3>
-                    Que ce soit pour les réseaux sociaux ou les chaines de télévision journalistique, la communication
-                    est un élément essentiel de notre vie quotidienne. L'IA générative peut être utilisée pour améliorer
-                    l'expérience de communication des utilisateurs en leur fournissant des contenus plus pertinents et
-                    personnalisés. Par exemple, les entreprises de médias peuvent utiliser l'IA générative pour créer
-                    des
-                    articles de presse personnalisés en fonction des préférences de leurs lecteurs. De même, les
-                    entreprises de médias sociaux peuvent utiliser l'IA générative pour créer des contenus personnalisés
-                    pour leurs utilisateurs, en fonction de leurs intérêts et de leurs préférences.
-                    <div
-                      style="flex-wrap: wrap; display: flex;display: flex; align-items: center; justify-content: center;">
-                      <blockquote class="twitter-tweet">
-                        <p lang="en" dir="ltr">See the highest quality AI footage in the world.<br><br>🤯 - Our
-                          generated
-                          anchors deliver stories that are informative, heartfelt and entertaining.<br><br>Watch the
-                          showcase
-                          episode of our upcoming news network now. <a
-                            href="https://t.co/61TaG6Kix3">pic.twitter.com/61TaG6Kix3</a></p>&mdash; Channel 1
-                        (@channel1_ai)
-                        <a href="https://twitter.com/channel1_ai/status/1734591810033373231?ref_src=twsrc%5Etfw">December
-                          12,
-                          2023</a>
-                      </blockquote>
-                      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                      <i>Démonstration d'une émission journalistique présentée et structurée entièrement par
-                        Intelligence
-                        Artificielle (Individus, voix, texte artificiellement générés)</i>
-                    </div><br>
-
-                    L'IA générative peut également permettre de briser les barrières linguistiques en traduisant
-                    automatiquement les contenus dans la langue préférée des utilisateurs. Par exemple, un appel
-                    téléphonique peut être traduit en temps réel dans la langue préférée de l'utilisateur (notamment ce
-                    qu'à réaliser Samsung avec son système de traduction "AI Live Translate Call"). De même, les
-                    sous-titres des vidéos peuvent être traduits automatiquement dans la langue préférée de
-                    l'utilisateur.<br>
-
-                    <div style="text-align: right;">
-                      <a href="https://www.rtl.fr/actu/sciences-tech/traduction-simultanee-des-appels-resumes-de-reunions-l-ia-generative-s-invite-dans-les-smartphones-7900343275"
-                        target="_blank">Source : rtl.fr - 20/01/2024</a>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>La fabrication</h3>
-                    L'IA générative peut être utilisée dans la conception de produits, l'optimisation des processus et
-                    la maintenance prédictive dans l'industrie manufacturière. En analysant les données sur les
-                    performances des produits, l’IA générative peut aider les fabricants à optimiser la conception des
-                    produits, à améliorer les fonctionnalités et à réduire les coûts. De plus, l’IA générative peut
-                    aider les fabricants à optimiser leurs processus de production, en minimisant les déchets et en
-                    améliorant l’efficacité. Enfin, l’IA générative peut être utilisée pour prédire les pannes
-                    d’équipements, permettant ainsi aux fabricants d’effectuer la maintenance avant qu’une panne ne
-                    survienne.
-
-                    <div style="text-align: right;">
-                      <a href="https://www.solulab.com/generative-ai/" target="_blank">Source: solulab.com</a>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>Le divertissement</h3>
-                    Dans le domaine du divertissement, l'IA générative peut être utilisée pour créer des contenus
-                    personnalisés et plsu immersifs pour les utilisateurs.<br>
-                    Pour le <b>secteur du cinéma</b>, l'IA générative peut être utilisée pour créer des scénarios ou
-                    créer des effets spéciaux.<br>
-                    Pour le <b>secteur de la musique</b>, l'IA générative peut être utilisée pour créer des chansons ou
-                    des effets sonores.<br><br>
-                    Pour ce qui est des <b>jeux vidéo</b>, l'IA générative peut permettre les éléments suivants :<br>
-                    • Créer des personnages non joueurs (PNJ) plus réalistes et plus intelligents.<br>
-                    • Créer des environnements de jeu plus réalistes et plus immersifs.<br>
-                    • Adapter le gameplay du jeu en fonction des préférences et des compétences des joueurs.<br>
-                    • Génération de Contenu Procédural --> <i>Longévité du jeu augmentée avec les variations d'une même
-                      jeu (chaque partie et différente)</i><br>
-                    • Animation et graphisme autogénérés<br>
-                    • Dialogue et intrigue améliorés et plus naturel<br>
-                    <a href="https://www.cio.com/article/1294946/game-on-the-evolution-of-gaming-through-generative-ai-innovation.html"
-                      target="_blank">Source: cio.com - Game on: The evolution of gaming through generative AI
-                      innovation -
-                      Jan 19, 2024</a>
-                    <br><br>
-                    <a href="https://www.inworld.ai/" target="_blank">Inworld AI</a> a le potentiel de révolutionner la
-                    manière dont les PNJ sont créés pour les jeux vidéo et
-                    les expériences immersives. Les PNJ Inworld AI sont plus intelligents, réalistes et engageants que
-                    les PNJ traditionnels, ce qui peut créer des expériences de jeu plus immersives et mémorables.
-                    <div style="text-align: center;">
-                      <iframe width="560" height="315"
-                        src="https://www.youtube.com/embed/jHodl-n7vvU?si=IBxgBqJl658Uu0iD" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe>
-                    </div>
-                  </td>
-                </tr>
-              </table>
-
-              <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <h3>La mode</h3>
-                    Les IA génératives peuvent aider les créateurs à concevoir des vêtements à la mode en utilisant les
-                    capacités de génération d'images des IA génératives ; l'outil peut utiliser d'énormes quantités de
-                    données sur le design de mode et suivre l'évolution des tendances pour analyser les besoins des
-                    clients et concevoir en conséquence des vêtements à la mode.
-
-                    De plus, les outils génératifs basés sur l'IA peuvent aider le créateur à générer des modèles de
-                    mode pour ses vêtements créatifs ; cela élimine la séance photo fastidieuse, longue et coûteuse,
-                    leur permettant ainsi d'avancer dans le lancement du produit.
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td>
-
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td style="text-align: right;">
-                    <a href="https://www.solulab.com/generative-ai/" target="_blank">Source: solulab.com</a>
-                  </td>
-                </tr>
-              </table>
-
-
-
-              <!-- <table style="background-color: #272833; border-collapse:initial;">
-                <tr></tr>
-                <tr>
-                  <td>
-                    <img src="images/veille/IA/__________.png" style="width: 100%; border-radius: 100%;" alt="" />
-                  </td>
-                  <td style="width: 90%; vertical-align:middle;">
-                    ____________________
-                  </td>
-                </tr>
-                <tr></tr>
-                <tr>
-                  <td colspan="2" style="text-align: right;">
-                    <a href="https://www.servicenow.com/fr/now-platform/what-is-generative-ai.html"
-                      target="_blank">Source: servicenow.com</a>
-                  </td>
-                </tr>
-              </table> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
 
 
     <!-- Footer -->
@@ -725,7 +134,7 @@
 
   </div>
 
-  <button class="scrolly" href="#banner" id="up" title="Aller en haut de la page">⬆</button>
+  <button class="scrolly" href="#top" id="up" title="Aller en haut de la page">⬆</button>
 
   <script src="assets/js/up.js"></script>
   <script src="assets/js/jquery.min.js"></script>
