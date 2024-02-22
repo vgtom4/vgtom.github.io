@@ -4429,3 +4429,82 @@ input, select, textarea {
   .cv-button:focus {
 	outline: none;
   }
+
+
+  /* Liste des missions */
+  .missions {
+	list-style: none;
+	padding: 0;
+  }
+
+  /* Mission individuelle */
+  .mission {
+	margin-bottom: 20px;
+	/* border: 1px solid #ddd;
+	border-radius: 4px; */
+  }
+
+  /* Titre de la mission */
+  .mission-title {
+	background-color: #272833;
+	padding: 10px;
+	width: auto;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+	text-align: center;
+	color: white;
+	border: 0;
+  }
+
+  .mission-title::after {
+	content: "";
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top: 10px solid #ddd;
+	margin-left: 10px;
+	position: relative;
+	top: 2px;
+  }
+
+  /* Description de la mission */
+  .mission-description {
+	border-radius: 4px;
+	background-color: #272833;
+	display: none;
+  }
+
+  .grid-mission {
+	display: grid;
+	grid-gap: 20px;
+	padding: 20px;
+	align-items: center;
+  }
+
+  .grid-mission img {
+	width: 100%;
+  }
+
+  /* Lignes impairs */
+  .grid-mission p:nth-of-type(odd) {
+	grid-column-start: 2;
+	grid-column-end: 4;
+  }
+
+  .grid-mission img:nth-of-type(odd) {
+	grid-column-start: 1;
+	grid-column-end: 1;
+  }
+
+  /* Lignes pairs */
+  .grid-mission p:nth-of-type(even) {
+	grid-column-start: 1;
+	grid-column-end: 3;
+  }
+
+  .grid-mission img:nth-of-type(even) {
+	grid-column-start: 3;
+	grid-column-end: 3;
+  }

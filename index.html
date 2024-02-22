@@ -461,6 +461,75 @@
               <br>- Evolution de l'interface d'un module de l'application métier de la société.
             </p>
 
+            <h1>Missions réalisées</h1>
+            <ul class="missions">
+              <li class="mission">
+                <button class="mission-title">
+                  Mission 1 : Portage d'un service windows de nettoyage de base de données.
+                </button>
+                <div class="mission-description">
+                  <div class="grid-mission">
+                    <img src="images/stages/premiereAnnee/M1Preview.png">
+                    <p>
+                      AlteClean est un service Windows qui permet de nettoyer les bases de données de la société SERA.
+                      Il est utilisé pour supprimer les données obsolètes des tables de la base de données.
+                    </p>
+
+                    <p>AlteClean récupère la durée de conservation des données pour chaque table à partir d’une table
+                      spécifique. En se basant sur ces durées, il supprime les données des tables en fonction de la date
+                      à laquelle chaque donnée a été insérée. Par exemple, si la durée de conservation spécifiée est de
+                      3 mois, toutes les données qui sont plus anciennes de 3 mois seront supprimées de la table
+                      respective.</p>
+                    <img src="images/stages/premiereAnnee/M1Debug.png">
+                  </div>
+                </div>
+              </li>
+              <li class="mission">
+                <button class="mission-title">
+                  Mission 2 : Evolution de l'interface d'un module de l'application métier de la société.
+                </button>
+                <div class="mission-description">
+                  <div class="grid-mission">
+                    <img src="images/stages/premiereAnnee/M2Old.png">
+                    <p>Le formulaire TraceErreur récupère les erreurs du logiciel, qui sont stockées dans la base de
+                      données, puis les insère dans un DataGridView (tableau). Ce tableau permet ensuite au service
+                      technique de visualiser les informations de chaque erreur comme la pile d'erreurs (accumulation de
+                      multiples erreurs ou fautes qui se produisent successivement ou simultanément) et le paramètre de
+                      l’application au moment de l’erreur. Un filtrage des informations (date d’erreur, nom de la
+                      machine, nom de l’application) peut être effectué pour restreindre le nombre d'erreurs dans le
+                      tableau.
+                    </p>
+
+                    <p>
+                      L'objectif de cette mission était de faire évoluer l'interface de ce module pour qu'elle soit plus
+                      ergonomique et plus intuitive pour l'utilisateur. Pour cela, j'ai dû réaliser une maquette de la
+                      nouvelle interface, puis la développer en utilisant le langage Visual Basic et le framework .NET.
+                    </p>
+                    <img src="images/stages/premiereAnnee/M2Maquette.png">
+
+                    <img src="images/stages/premiereAnnee/M2New.png">
+                    <p>
+                      La nouvellle interface permet de visualiser les erreurs de manière plus claire et plus lisible.
+                      Les informations peuvent être filtrées en les regroupant par l'une des colonnes du tableau.
+                      Après groupement, le tableau contient la date/heure de la dernière erreur et le nombre d'erreurs.
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <script>
+              for (const missionTitle of document.querySelectorAll('.mission-title')) {
+                missionTitle.addEventListener('click', () => {
+                  // Cacher toutes les missions-description sauf celle qui est cliquée
+                  for (const missionDescription of document.querySelectorAll('.mission-description')) {
+                    if (missionDescription !== missionTitle.nextElementSibling) missionDescription.style.display = 'none';
+                    else missionDescription.style.display = missionDescription.style.display === 'none' ? 'block' : 'none';
+                  }
+                });
+              }
+            </script>
+
 
             <a class="icon solid alt fa-file" onclick="window.open('assets/pdf/CRS1.pdf', '_blank')"
               style="color: aliceblue; background-color: #212125; border-radius: 5px; padding: 5px 30px 5px 30px; cursor: pointer;">
