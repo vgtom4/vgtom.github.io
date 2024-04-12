@@ -8,6 +8,29 @@
 </head>
 
 <body>
+  <style>
+    a {
+      border-bottom: none;
+    }
+
+    .card-info {
+      background-color: #272833;
+      margin: 20px 0;
+      padding: 30px;
+    }
+
+    .card-info img {
+      height: 400px;
+      object-fit: contain;
+
+    }
+
+    .card-info-source {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10px;
+    }
+  </style>
   <div id="page-wrapper">
 
     <!-- Header -->
@@ -32,17 +55,12 @@
       </nav>
     </header>
 
-    <style>
-      a {
-        border-bottom: none;
-      }
-    </style>
-
     <!-- Banner -->
     <section id="banner">
       <div class="content">
         <header>
-          <h2><strong>L'utilisation de l'ordinateur quantique pour sécuriser le cryptage des données.</strong></h2>
+          <h2><strong>Les algorithmes de cryptage et l'avènement de l'informatique quantique pour sécuriser le cryptage
+              des données.</strong></h2>
         </header>
         <img class="image" src="images/veille/sujet2/ordiQuantique.jpg" alt="" />
       </div>
@@ -50,41 +68,242 @@
 
     <!-- ------------------------------------------------------------------------------------------- -->
 
-    <section id="whatsAIG" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <!-- Sommaire -->
+    <section id="sommaire">
+      <div class="content" style="background-color: #272833; padding: 20px;">
+        <div class="row"></div>
+        <h2 style="text-align: center;"><strong>Sommaire</strong></h2>
+        <div style="text-align: left; margin: auto; width: 50%; justify-content: center; display: flex;">
+          <ul>
+            <li><a href="#p1">Les protections des données grâce aux algorithmes de cryptage</a></li>
+            <li><a href="#p2">L'avènement de l'informatique quantique</a></li>
+            <li><a href="#p3">Les opportunités de l'informatique quantique dans le cryptage des données</a></li>
+            <li><a href="#p4">Les dangers de l'informatique quantique sur le cryptage des données</a></li>
+            <li><a href="#p5">Les solutions et perspectives futures</a></li>
+            <li><a href="#synthese">Synthèse</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------------------------------------------------- -->
+
+    <section id="p1" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
       <div class="content">
         <div class="container">
           <div class="row">
             <div>
-              <h2>En cours d'écriture...</h2>
+              <h2>Les protections des données grâce aux algorithmes de cryptage</h2>
+
+              <div class="card-info">
+                <h3>Pourquoi la protection des données est-elle importante ?</h3>
+                <p>
+                  <img src="images/veille/sujet2/secu.png" style="width: 100%; border-radius: 100%;" alt="" />
+                  De nos jours, nos données personnelles sont omniprésentes. Elles sont stockées par des entreprises,
+                  des gouvernements et d'autres organisations, souvent à notre insu. Celles-ci permettent de nous
+                  identifier, de nous localiser, de nous suivre et de nous analyser.
+                  Grâce à ces informations, les entreprises peuvent personnaliser leurs services, cibler leurs
+                  publicités
+                  et améliorer leurs produits. Cependant, ces données peuvent également être utilisées à des fins
+                  malveillantes, telles que le vol d'identité, la fraude ou la surveillance de masse.
+                </p>
+                <a class="card-info-source"
+                  href="https://www.bocasay.com/fr/valent-donnees-personnelles-comment-utilisees/"
+                  target="_blank">Source: bocasay.com - Que valent vraiment vos données personnelles et comment
+                  sont-elles utilisées ? (13 mai 2022)</a>
+
+                <h3>Le rôle du RGPD.</h3>
+                <p>
+                  La protection des données est essentielle pour garantir que ces informations soient traitées de
+                  manière responsable et éthique.
+                  Le RGPD (Règlement Général sur la Protection des Données) est une réglementation de l'Union européenne
+                  qui vise à protéger les données personnelles des citoyens de l'UE. Il impose des obligations aux
+                  entreprises qui collectent et traitent des données personnelles, telles que l'obligation de demander
+                  le
+                  consentement des individus avant de collecter leurs données et de garantir que ces données soient
+                  stockées en toute sécurité.
+                </p>
+                <a class="card-info-source" href="https://www.cnil.fr/fr/rgpd-de-quoi-parle-t-on"
+                  target="_blank">Source: cnil.fr - RGPD : de quoi parle-t-on ? (10 avril 2018)</a>
+
+                <h3>Une solution pour protéger les données : le cryptage des informations</h3>
+                <img src="images/veille/sujet2/crypt.png" style="width: 100%; align-items: center;  " alt="" />
+                <p>
+                  Le cryptage des données est une méthode de protection des informations en les rendant illisibles pour
+                  toute personne non autorisée. Il consiste à transformer les données en un format codé à l'aide d'un
+                  algorithme de cryptage, de sorte qu'elles ne puissent être lues que par une personne disposant de la
+                  clé de déchiffrement appropriée. Les algorithmes de cryptage sont conçus pour être extrêmement
+                  difficiles à déchiffrer sans la clé correspondante, ce qui garantit que les données restent
+                  confidentielles et sécurisées.
+                </p>
+                <a class="card-info-source"
+                  href="https://www.itpro.fr/comprendre-algorithmes-cryptage/#:~:text=Les%20algorithmes%20de%20cryptage%20sont,synonyme%20d'algorithme%20de%20cryptage."
+                  target="_blank">Source: itpro.fr - Comprendre les algorithmes de cryptage (29 avril 2013)</a>
+
+                <h3>Les différents algorithmes de chiffrement</h3>
+                <img src="images/veille/sujet2/crytKey.png" style="width: 100%; align-items: center;  " alt="" />
+
+                <h4>Chiffrement AES (Advanced Encryption Standard)</h4>
+                <p>
+                  Un algorithme symétrique robuste et largement utilisé, adopté par les gouvernements et les industries
+                  pour protéger les données confidentielles.
+                </p>
+
+                <h4>Chiffrement RSA (Rivest, Shamir, Adleman)</h4>
+                <p>
+                  Un algorithme asymétrique largement utilisé pour la sécurisation des communications en ligne, comme
+                  les transactions par carte bancaire et les courriels sécurisés.
+                </p>
+                <a class="card-info-source" href="https://www.proofpoint.com/fr/threat-reference/encryption"
+                  target="_blank">Source: proofpoint.com - Qu'est-ce que le chiffrement ? (20 janv. 2021)</a>
+                <a class="card-info-source" href="https://www.sealpath.com/fr/blog/types-de-chiffrement-guide/"
+                  target="_blank">Source: sealpath.com - Plongée dans les Types de Cryptage (27 févr. 2024)</a>
+
+                <h4>Chiffrement ECC (Elliptic Curve Cryptography):</h4>
+                <p>
+                  Une alternative prometteuse au RSA, offrant une sécurité comparable avec des clés plus courtes et une meilleure efficacité.
+                </p>
+                <a class="card-info-source" href="https://avinetworks.com/glossary/elliptic-curve-cryptography/"
+                  target="_blank">Source: avinetworks.com - Elliptic Curve Cryptography</a>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+  </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------------- -->
+
+
+  <section id="p2" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2>L'avènement de l'informatique quantique</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cum quibusdam nisi autem dolorem modi
+          alias sequi quis quam obcaecati blanditiis eveniet molestiae nam, excepturi iste rerum quidem quia
+          exercitationem.
+        </p>
+
+        <h3>Quelques explications sur les méthodes d'apprentissages machine :</h3>
+
+        <div class="card-info">
+          <h3>___________________</h3>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap; padding: 10px;">
+            <img src="images/veille/sujet2/" style="width: 100%;" alt="" />
+            <p>
+              ___________________
+            </p>
+            <img src="images/veille/sujet2/" style="width: 100%;" alt="" />
+          </div>
+
+          <a class="card-info-source" href="___________________" target="_blank">Source: ___________________</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ------------------------------------------------------------------------------------------- -->
+
+
+  <section id="p3" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2>Les dangers de l'informatique quantique pour le cryptage des données</h2>
+
+        <div class="card-info">
+          <h3>___________________</h3>
+          <img style="width: 20%;" src="images/veille/sujet2/" style="width: 100%;" alt="" />
+          <p style="width: 80%;">
+            ___________________
+          </p>
+          <a class="card-info-source" href="___________________" target="_blank">Source: ___________________</a>
+        </div>
+
+        <div class="card-info">
+          <h3>___________________</h3>
+          <p>
+            ___________________
+          </p>
+          <a class="card-info-source" href="___________________" target="_blank">Source: ___________________</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="p4" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2>Les dangers de l'informatique quantique pour le cryptage des données</h2>
+
+        <div class="card-info">
+          <h3>___________________</h3>
+          <p>
+            ___________________
+          </p>
+          <a class="card-info-source" href="___________________" target="_blank">Source: ___________________</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="p5" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2>Les solutions et perspectives futures</h2>
+        <br />
+        <div style="background-color: #272833; margin: auto;">
+          <img src="images/veille/sujet2/méthodesML.png" style="width: 100%; padding: 5px;" alt="" />
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="synthese" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2 style="text-align: center;">Systhèse</h2>
+        <br />
+        <div style="background-color: #272833; margin: auto;">
+          <img src="images/veille/sujet2/méthodesML.png" style="width: 100%; padding: 5px;" alt="" />
+        </div>
+
+      </div>
+    </div>
+  </section>
 
 
 
 
 
-    <!-- Footer -->
-    <footer id="footer">
-      <ul class="icons">
-        <li><a href="https://www.linkedin.com/in/tom-vieillard-grelet-09b691250/" target="_blank"
-            class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://github.com/vgtom4" target="_blank" class="icon brands alt fa-github"><span
-              class="label">GitHub</span></a></li>
-      </ul>
-      <ul>
-        <a class="icon solid alt fa-envelope" href="mailto:tom.vieillard.grelet@gmail.com" target="_blank"> Contactez
-          moi via tom.vieillard.grelet@gmail.com</a>
-      </ul>
-      <ul>
-        <dialog class="modal">
-          <i close-modal class="close gg-close"></i>
-          <div id="project-details"></div>
-        </dialog>
-      </ul>
-    </footer>
+
+
+  <!-- Footer -->
+  <footer id="footer">
+    <ul class="icons">
+      <li><a href="https://www.linkedin.com/in/tom-vieillard-grelet-09b691250/" target="_blank"
+          class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+      <li><a href="https://github.com/vgtom4" target="_blank" class="icon brands alt fa-github"><span
+            class="label">GitHub</span></a></li>
+    </ul>
+    <ul>
+      <a class="icon solid alt fa-envelope" href="mailto:tom.vieillard.grelet@gmail.com" target="_blank"> Contactez
+        moi via tom.vieillard.grelet@gmail.com</a>
+    </ul>
+    <ul>
+      <dialog class="modal">
+        <i close-modal class="close gg-close"></i>
+        <div id="project-details"></div>
+      </dialog>
+    </ul>
+  </footer>
 
   </div>
 
