@@ -76,6 +76,7 @@
         <div style="text-align: left; margin: auto; width: 50%; justify-content: center; display: flex;">
           <ul>
             <li><a href="#p1">Les protections des données grâce aux algorithmes de cryptage</a></li>
+            <li><a href="#pShor">L'algorithme de Shor : RSA et ECC décryptés</a></li>
             <li><a href="#p2">L'avènement de l'informatique quantique</a></li>
             <li><a href="#p3">Les opportunités de l'informatique quantique dans le cryptage des données</a></li>
             <li><a href="#p4">Les dangers de l'informatique quantique sur le cryptage des données</a></li>
@@ -141,19 +142,34 @@
                   href="https://www.itpro.fr/comprendre-algorithmes-cryptage/#:~:text=Les%20algorithmes%20de%20cryptage%20sont,synonyme%20d'algorithme%20de%20cryptage."
                   target="_blank">Source: itpro.fr - Comprendre les algorithmes de cryptage (29 avril 2013)</a>
 
-                <h3>Les différents algorithmes de chiffrement</h3>
+                <h3>Quelques algorithmes de chiffrement les plus utilisés</h3>
                 <img src="images/veille/sujet2/crytKey.png" style="width: 100%; align-items: center;  " alt="" />
 
                 <h4>Chiffrement AES (Advanced Encryption Standard)</h4>
                 <p>
-                  Un algorithme symétrique robuste et largement utilisé, adopté par les gouvernements et les industries
-                  pour protéger les données confidentielles.
+
+                  L'AES (Advanced Encryption Standard) est un algorithme de chiffrement symétrique très sécurisé,
+                  utilisé pour protéger les données. Il remplace le DES depuis 2001. Fonctionnant sur des blocs de
+                  données de taille fixe et prenant en charge des clés de 128, 192 et 256 bits, l'AES est connu pour sa
+                  robustesse contre les attaques cryptographiques. Son efficacité repose sur une série d'opérations
+                  telles que SubBytes, ShiftRows, MixColumns et AddRoundKey permettant de complexifier le chiffrement
+                  plusieurs fois. La sécurité de la clé de chiffrement est
+                  primordiale pour son implémentation réussie, nécessitant un générateur de nombres aléatoires sécurisé
+                  et des mesures de protection adéquates.
                 </p>
+                <a class="card-info-source"
+                  href="https://www.kiteworks.com/fr/transfert-de-fichier-securise/comment-fonctionne-aes-tout-sur-les-etapes-de-lalgorithme-aes/"
+                  target="_blank">Source: kiteworks.com - Comment fonctionne AES ? Tout sur les étapes de l'algorithme
+                  (octobre 5, 2023)</a>
 
                 <h4>Chiffrement RSA (Rivest, Shamir, Adleman)</h4>
                 <p>
-                  Un algorithme asymétrique largement utilisé pour la sécurisation des communications en ligne, comme
-                  les transactions par carte bancaire et les courriels sécurisés.
+                  Le RSA (Rivest-Shamir-Adleman) est un algorithme de cryptographie asymétrique largement utilisé. Il
+                  permet de résoudre le problème de la communication sécurisée sans avoir à partager préalablement une
+                  clé de chiffrement. Avec RSA, chaque utilisateur dispose d'une paire de clés : une clé publique,
+                  utilisée pour chiffrer les messages, et une clé privée correspondante, utilisée pour les déchiffrer.
+                  L'algorithme RSA est souvent utilisé en conjonction avec d'autres systèmes de chiffrement, notamment
+                  pour crypter les signatures numériques afin de garantir l'intégrité et l'authenticité des messages.
                 </p>
                 <a class="card-info-source" href="https://www.proofpoint.com/fr/threat-reference/encryption"
                   target="_blank">Source: proofpoint.com - Qu'est-ce que le chiffrement ? (20 janv. 2021)</a>
@@ -162,10 +178,18 @@
 
                 <h4>Chiffrement ECC (Elliptic Curve Cryptography):</h4>
                 <p>
-                  Une alternative prometteuse au RSA, offrant une sécurité comparable avec des clés plus courtes et une meilleure efficacité.
+                  L'ECC (Elliptic Curve Cryptography) est une technique de cryptographie alternative au RSA, utilisant
+                  les mathématiques des courbes elliptiques pour générer des clés sécurisées. Contrairement au RSA,
+                  l'ECC offre des clés plus petites et une sécurité robuste. De plus en plus utilisée pour sécuriser les
+                  données en ligne et optimiser la compatibilité mobile, l'ECC est considérée comme la prochaine
+                  génération de cryptographie à clé publique, offrant un niveau de sécurité supérieur. Une courbe
+                  elliptique dans ce contexte est une courbe plane définie par l'équation y² = x³ + ax + b, où toute
+                  ligne non verticale intersecte la courbe en trois points ou moins.
                 </p>
                 <a class="card-info-source" href="https://avinetworks.com/glossary/elliptic-curve-cryptography/"
                   target="_blank">Source: avinetworks.com - Elliptic Curve Cryptography</a>
+                <a class="card-info-source" href="https://cyberpedia.reasonlabs.com/EN/elliptic%20curve%20cryptography%20(ecc).html"
+                  target="_blank">Source: cyberpedia.reasonlabs.com - Elliptic Curve Cryptography (ECC) (7 févr. 2024)</a>
 
               </div>
             </div>
@@ -173,6 +197,42 @@
         </div>
       </div>
   </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------------------------------- -->
+
+
+  <section id="pShor" class="style1 bottom" style="margin-top: 20px; padding: 10px;">
+    <div class="content">
+      <div class="container">
+        <h2>L'algorithme de Shor : RSA et ECC décryptés</h2>
+        <p>
+          Peter Shor, un mathématicien américain, a développé un algorithme quantique en 1994 qui peut factoriser des
+          nombres en temps polynomial. Cela signifie que l'algorithme de Shor peut résoudre des problèmes de factorisation
+          qui prennent des milliers d'années à résoudre sur un ordinateur classique en quelques secondes sur un ordinateur
+          quantique. Cela a des implications majeures pour la sécurité des systèmes de cryptage basés sur la factorisation
+          de nombres premiers, tels que RSA et ECC. En effet, si un ordinateur quantique suffisamment puissant était
+          construit, il pourrait casser ces systèmes de cryptage en un temps record, mettant en danger la sécurité des données
+          sensibles stockées sur Internet.
+        </p>
+
+        <h3>Quelques explications sur les méthodes d'apprentissages machine :</h3>
+
+        <div class="card-info">
+          <h3>___________________</h3>
+          <div style="display: flex; gap: 20px; flex-wrap: wrap; padding: 10px;">
+            <img src="images/veille/sujet2/" style="width: 100%;" alt="" />
+            <p>
+              ___________________
+            </p>
+            <img src="images/veille/sujet2/" style="width: 100%;" alt="" />
+          </div>
+
+          <a class="card-info-source" href="___________________" target="_blank">Source: ___________________</a>
+        </div>
+
+      </div>
+    </div>
   </section>
 
   <!-- ------------------------------------------------------------------------------------------- -->
