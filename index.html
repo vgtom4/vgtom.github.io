@@ -246,7 +246,8 @@
           </div>
           <div class="competence">
             <div class="image-container">
-              <img style="background-color: white; clip-path: inset(2px 2px 2px 2px round 50%);" src="images/services/postman.webp">
+              <img style="background-color: white; clip-path: inset(2px 2px 2px 2px round 50%);"
+                src="images/services/postman.webp">
             </div>
             <span class="competence-name">Postman</span>
           </div>
@@ -465,11 +466,29 @@
         </header>
 
         <div id="btnAnnee">
-          <!-- <button id="btnPremiereAnnee" onclick="document.getElementById('premiereAnnee').style.display = 'block'; document.getElementById('deuxiemeAnnee').style.display = 'none'">Première année</button> -->
-          <!-- <button id="btnDeuxiemeAnnee" onclick="document.getElementById('premiereAnnee').style.display = 'none'; document.getElementById('deuxiemeAnnee').style.display = 'block'">Deuxième année</button> -->
+          <style>
+            .btnStage {
+              background-color: rgb(39, 40, 51);
+              color: white;
+              width: 400px;
+              height: 30px;
+              font-size: 1em;
+              border: 0;
+              border-radius: 5px;
+              cursor: pointer;
+              transition: 0.3s;
+            }
+          </style>
+          <button id="btnPremiereAnnee"
+            onclick="document.getElementById('premiereAnnee').style.display = 'block'; document.getElementById('deuxiemeAnnee').style.display = 'none'; document.getElementById('btnPremiereAnnee').style.transform = 'scale(1.04)'; document.getElementById('btnDeuxiemeAnnee').style.transform = 'scale(0.7)';"
+            style="transform: scale(1.04);" class="btnStage">Première année</button>
+          <button id="btnDeuxiemeAnnee"
+            onclick="document.getElementById('premiereAnnee').style.display = 'none'; document.getElementById('deuxiemeAnnee').style.display = 'block'; document.getElementById('btnPremiereAnnee').style.transform = 'scale(0.7)'; document.getElementById('btnDeuxiemeAnnee').style.transform = 'scale(1.04)';"
+            style="transform: scale(0.7);" class="btnStage">Deuxième année</button>
         </div>
+        <br />
         <div id="content">
-          <div id="premiereAnnee">
+          <div id="premiereAnnee" style="display: block;">
             <p>Stage de première année.</p>
             <p>Lieu du stage : société SERA - Chasselay</p>
             <p><img src="images/stages/premiereAnnee/sera.jpg" style="width: 60%;" /></p>
@@ -477,10 +496,10 @@
                 l'entreprise.</a></p>
 
             <p>Période du stage : 22 mai - 30 juin 2023</p>
-            <p>Travaux réalisés :
-              <br>- Portage d'un service windows de nettoyage de base de données.
-              <br>- Evolution de l'interface d'un module de l'application métier de la société.
-            </p>
+            <!-- <p>Travaux réalisés :
+              <li>Portage d'un service windows de nettoyage de base de données.</li>
+              <li>Evolution de l'interface d'un module de l'application métier de la société.</li>
+            </p> -->
 
             <h1>Missions réalisées</h1>
             <ul class="missions">
@@ -543,7 +562,7 @@
               for (const missionTitle of document.querySelectorAll('.mission-title')) {
                 missionTitle.addEventListener('click', () => {
                   // Cacher toutes les missions-description sauf celle qui est cliquée
-                  for (const missionDescription of document.querySelectorAll('.mission-description')) {
+                  for (const missionDescription of document.firstElementChild('.mission-description')) {
                     if (missionDescription !== missionTitle.nextElementSibling) missionDescription.style.display = 'none';
                     else missionDescription.style.display = missionDescription.style.display === 'none' ? 'block' : 'none';
                   }
@@ -572,9 +591,127 @@
 
           </div>
 
-          <!-- <div id="deuxiemeAnnee" style="display: none;">
-            <p >Contenu de la deuxième année.</p>
-          </div> -->
+          <!-- ----------------------- -->
+          <div id="deuxiemeAnnee" style="display: none;">
+            <p>Stage de deuxième année.</p>
+            <p>Lieu du stage : PARTNER Information - Mâcon</p>
+            <p><img src="images/stages/deuxiemeAnnee/logo.png" style="width: 60%;" /></p>
+            <p><a href="https://www.partner-informatique.fr/" target="_blank" style="cursor: pointer;">Accéder au site
+                web de
+                l'entreprise.</a></p>
+
+            <p>Période du stage : 4 mars - 12 avril 2024</p>
+            <!-- <p>Travaux réalisés :
+              <li>Prise en main des technologies de l'entreprise.</li>
+              <li>Scrapping de mail</li>
+              <li>Évolution d’une application Web existante</li>
+            </p> -->
+
+            <h1>Missions réalisées</h1>
+            <ul class="missions">
+              <li class="mission">
+                <button class="mission-title">
+                  Mission 1 : Prise en main des technologies de l'entreprise.
+                </button>
+                <div class="mission-description">
+                  <div class="grid-mission">
+                    <img src="images/stages/deuxiemeAnnee/learn.png">
+                    <p>
+                      Afin de pouvoir maîtriser les différentes technologies utilisées, un petit projet en autonomie m’a
+                      été donné pour apprendre à utiliser les nouvelles notions de celles-ci.
+                      Le projet consiste à développer une API REST avec Spring Boot qui communique avec une base de
+                      données MariaDB.
+                    </p>
+
+                  </div>
+                  <p style="padding: 10px;">
+                    Le thème du projet porte sur l’un de mes centres d’intérêt qui est le jeu vidéo.
+                    Ce thème me permet d’utiliser mes connaissances pour réaliser une application dans un contexte que
+                    je maitrise.
+                  </p>
+                </div>
+              </li>
+              <li class="mission">
+                <button class="mission-title">
+                  Mission 2 : Scrapping de mail.
+                </button>
+                <div class="mission-description">
+                  <div class="grid-mission">
+                    <img src="images/stages/deuxiemeAnnee/scrap_form.png">
+                    <p>
+                      Suite à l'arrêt des services Mail de Orange, le service de communication me demande de développer
+                      une application permettant de récupérer des informations (email, nom-prénom du gérant et l’adresse
+                      géographique) de notaires présentent sur le site https://www.notaires.fr/fr. Les informations
+                      récupérées seront stockées et structurées dans un fichier CSV.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="mission">
+                <button class="mission-title">
+                  Mission 3 : Évolution d’une application Web existante
+                </button>
+                <div class="mission-description">
+                  <div class="grid-mission">
+                    <img src="images/stages/deuxiemeAnnee/cbbs.png">
+                    <p>
+                      Le club “CHARNAY BASKET BOURGOGNE SUD” organise parfois des évènements sportifs. Pendant ces
+                      périodes, il héberge des joueuses dans son internat.
+                      Le club souhaite avoir une application Web leur permettant de gérer les informations de l’internat
+                      (chambres, types de repas…), de programmer et de visualiser des évènements et d’assigner à des
+                      joueuses des chambres et des repas durant ces périodes.
+                    </p>
+
+                    <p>
+                      On me demande de terminer l’application et de retravailler la partie d’édition des événements pour
+                      qu’elle soit plus simple à utiliser. L’application permettra une meilleure gestion de
+                      l’hébergement et de l’internat.
+                    </p>
+                    <img src="images/stages/deuxiemeAnnee/demo_periode_cbbs.png">
+
+                    <img src="images/stages/deuxiemeAnnee/demo_res_cbbs.png">
+                    <p>
+                      L’application doit pouvoir gérer les chambres (numéro, capacité, type de chambre), les types de
+                      repas, les joueuses et les évènements/périodes. L’utilisateur doit pouvoir gérer les réservations
+                      de chaque jour pour chaque période.
+                    </p>
+
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <script>
+              for (const missionTitle of document.querySelectorAll('.mission-title')) {
+                missionTitle.addEventListener('click', () => {
+                  // Cacher toutes les missions-description sauf celle qui est cliquée
+                  for (const missionDescription of document.querySelectorAll('.mission-description')) {
+                    if (missionDescription !== missionTitle.nextElementSibling) missionDescription.style.display = 'none';
+                    else missionDescription.style.display = missionDescription.style.display === 'none' ? 'block' : 'none';
+                  }
+                });
+              }
+            </script>
+
+
+            <a class="icon solid alt fa-file" onclick="window.open('assets/pdf/CRS2.pdf', '_blank')"
+              style="color: aliceblue; background-color: #212125; border-radius: 5px; padding: 5px 30px 5px 30px; cursor: pointer;">
+              Voir le compte rendu</a>
+
+            <br /><br />
+
+            <div class="competences-acquises-container"
+              style="display: block;cursor: pointer;background-color: #272833;border-radius: 4px;">
+              Compétences acquises
+              <div class="competences-acquises"
+                style="background-color: #272833; text-align: center; top: 100%; bottom: -500%;">
+                - Gérer le patrimoine informatique<br>
+                - Répondre aux incidents et aux demandes d’assistance et d’évolution<br>
+                - Développer la présence en ligne de l’organisation<br>
+                - Travailler en mode projet<br>
+                - Mettre à disposition des utilisateurs un service informatique
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -588,8 +725,9 @@
           <h2>Obtenez d'autres informations sur moi avec mon CV.</h2>
           <!-- <button class="cv-button" onclick="window.open('assets/pdf/cv.pdf', '_blank')">Voir le CV --></button>
           <!-- <iframe src="assets/pdf/cv.pdf" width="100%" height="800px"> </iframe> -->
-          <img src="assets/pdf/cv.png" onclick="window.open('assets/pdf/CV_Tom_Vieillard--Grelet.pdf', '_blank')" class="cv-button"
-            title="Ouvrir le CV sur une autre page" style="cursor:pointer; width: 60%; object-fit: contain;"></img>
+          <img src="assets/pdf/cv.png" onclick="window.open('assets/pdf/CV_Tom_Vieillard--Grelet.pdf', '_blank')"
+            class="cv-button" title="Ouvrir le CV sur une autre page"
+            style="cursor:pointer; width: 60%; object-fit: contain;"></img>
         </header>
       </div>
     </section>
